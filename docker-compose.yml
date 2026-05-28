@@ -1,0 +1,36 @@
+# docker-compose.yml · destino: Coolify (deploy via "Docker Compose" resource)
+#
+# Uso en Coolify:
+#   1. Crear nuevo recurso · Docker Compose
+#   2. Apuntar a este repositorio (branch main)
+#   3. Definir el dominio en la UI de Coolify (Traefik la enruta sola)
+#   4. Coolify maneja TLS, networking público y reverse proxy
+#
+# Para usar localmente:
+#   docker compose pull && docker compose up -d
+
+services:
+  grupoiasa:
+    image: ghcr.io/oscarangulo/web-iasa:latest
+    container_name: grupoiasa-website
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+      NEXT_TELEMETRY_DISABLED: "1"
+    expose:
+      - "3000"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - "node -e \"fetch('http://127.0.0.1:3000/').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))\""
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    labels:
+      # Coolify auto-routea por el dominio configurado en su UI.
+      # Estas labels Traefik son útiles para auto-hosted sin Coolify.
+      - "traefik.enable=true"
+      - "traefik.http.services.grupoiasa.loadbalancer.server.port=3000"
