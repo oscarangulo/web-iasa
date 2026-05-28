@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Proteus · Managed Construction Kit Abo",
+    "description": "Wachsen, ohne im Verwaltungschaos zu ertrinken. Für PYMEs im Mittelstand · Ingenieurwesen, Bau und Design."
+  },
+  "nav": {
+    "problem": "Engpass",
+    "solution": "Lösung",
+    "network": "Netzwerk",
+    "contact": "Kontakt",
+    "cta": "Demo anfragen"
+  },
+  "hero": {
+    "eyebrow": "Mittelstand × Ingenieurwesen",
+    "titlePre": "Wachsen, ohne im",
+    "titleEmph": "Verwaltungschaos",
+    "titlePost": "zu ertrinken.",
+    "subtitle": "Für deutsche KMU im Bau-, Ingenieur- und Designsektor. Wir übernehmen, was Sie am Wachstum hindert — damit Sie wieder das tun, wofür Sie gegründet haben.",
+    "cta": "Demo anfragen",
+    "ctaNote": "15 Min · unverbindlich · auf Deutsch",
+    "indicator": "Scroll"
+  },
+  "problem": {
+    "eyebrow": "Der Inhaber-Engpass",
+    "title": "Sie sind das Nadelöhr Ihres eigenen Unternehmens.",
+    "p1": "Sie haben eine Firma aufgebaut, die wächst. Aber jede Rechnung, jede Ausschreibung, jeder Mitarbeitervertrag landet auf Ihrem Tisch. Die Verwaltung frisst die Zeit auf, in der Sie eigentlich Projekte gewinnen, Kunden treffen oder Ihr Team entwickeln sollten.",
+    "p2": "Das Problem ist nicht, dass es zu viel Arbeit gibt. Das Problem ist, dass alles über Sie laufen muss — und niemand außer Ihnen das Gesamtbild kennt.",
+    "tagPain": "Was wir täglich hören",
+    "quotes": [
+      "Ich arbeite 60 Stunden pro Woche und habe trotzdem das Gefühl, nichts wirklich voranzubringen.",
+      "Wenn ich zwei Wochen Urlaub mache, steht das halbe Büro still.",
+      "Buchhaltung, Personal, Angebote, Behörden — ich bin überall der letzte Filter."
+    ]
+  },
+  "solution": {
+    "eyebrow": "Die Lösung",
+    "title": "Managed Construction Kit Abo.",
+    "subtitle": "Ein modulares Betriebssystem für Ihr Unternehmen — eingerichtet, betrieben und kontinuierlich verbessert von einem Netzwerk spezialisierter Partner. Kein Tool zum Selbstbedienen, sondern ein Team, das mitläuft.",
+    "pillars": [
+      {
+        "num": "01",
+        "title": "Co-Produce",
+        "body": "Wir übernehmen die laufende Verwaltung: Buchhaltung, Personal, Beschaffung, Angebotskoordination. Ihre operative Last sinkt — sofort, nicht in sechs Monaten."
+      },
+      {
+        "num": "02",
+        "title": "Co-Educate",
+        "body": "Wir schulen Ihr Team in den neuen Prozessen und Werkzeugen, statt sie einfach auszulagern. Wissen bleibt im Haus, Abhängigkeit entsteht keine."
+      },
+      {
+        "num": "03",
+        "title": "Co-Innovate",
+        "body": "Wir bringen Methoden aus Ingenieurwesen, Bau und Software zusammen. Jede Verbesserung in einem Mitglied wird Standard für das gesamte Netzwerk."
+      }
+    ]
+  },
+  "network": {
+    "eyebrow": "Das Netzwerk",
+    "title": "Drei Partner. Drei Disziplinen. Ein System.",
+    "subtitle": "Proteus ist kein einzelner Anbieter, sondern eine Konstellation operativer Partner mit klaren Rollen.",
+    "partners": [
+      {
+        "name": "Grupo IASA",
+        "discipline": "Ingenieurwesen · Umwelt",
+        "body": "Chilenische Ingenieurberatung mit 29 Jahren Erfahrung in Bergbau, Wasserwirtschaft und Hafenbau. ISO 9001:2015. Bringt strukturierte Ingenieurmethodik in jedes Mandat ein."
+      },
+      {
+        "name": "Zebroo",
+        "discipline": "Betriebsführung · Prozesse",
+        "body": "Spezialisten für die operative Übernahme von Verwaltungsfunktionen. Standardisieren, was sich standardisieren lässt — und identifizieren, was Ihr Kerngeschäft bleibt."
+      },
+      {
+        "name": "Julasoft",
+        "discipline": "Software · Automatisierung",
+        "body": "Entwickelt und betreibt die digitale Schicht: Tools, Dashboards, Automatisierungen. Wo Software den Engpass löst, kommt Julasoft."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Erstgespräch",
+    "title": "15 Minuten. Kein Sales.",
+    "subtitle": "Wir hören zu, fragen die richtigen Dinge und sagen Ihnen ehrlich, ob Proteus für Ihr Unternehmen passt. Wenn nicht, sagen wir es genauso ehrlich.",
+    "name": "Name",
+    "email": "E-Mail",
+    "company": "Unternehmen",
+    "message": "Worum geht es?",
+    "consent": "Ich willige in die Verarbeitung meiner Daten gemäß der Datenschutzerklärung ein.",
+    "submit": "Termin vorschlagen",
+    "thanks": "Vielen Dank. Wir melden uns innerhalb von 24 Stunden mit zwei Terminvorschlägen."
+  },
+  "footer": {
+    "company": "Proteus UG (haftungsbeschränkt)",
+    "location": "Celle, Deutschland",
+    "rights": "Alle Rechte vorbehalten",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz"
+  },
+  "cookie": {
+    "text": "Wir verwenden ausschließlich technisch notwendige Cookies. Kein Tracking, kein Marketing.",
+    "accept": "Verstanden"
+  }
+}

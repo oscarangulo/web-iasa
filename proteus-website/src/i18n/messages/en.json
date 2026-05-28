@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Proteus · Managed Construction Kit Subscription",
+    "description": "Grow without drowning in administrative chaos. For German Mittelstand engineering, construction and design firms."
+  },
+  "nav": {
+    "problem": "Bottleneck",
+    "solution": "Solution",
+    "network": "Network",
+    "contact": "Contact",
+    "cta": "Request demo"
+  },
+  "hero": {
+    "eyebrow": "Mittelstand × Engineering",
+    "titlePre": "Grow without",
+    "titleEmph": "drowning",
+    "titlePost": "in administrative chaos.",
+    "subtitle": "For German SMEs in construction, engineering and design. We take over what's slowing you down — so you can do what you actually built the company for.",
+    "cta": "Request demo",
+    "ctaNote": "15 min · no commitment · in German or English",
+    "indicator": "Scroll"
+  },
+  "problem": {
+    "eyebrow": "The owner-bottleneck",
+    "title": "You are the bottleneck of your own company.",
+    "p1": "You've built a company that's growing. But every invoice, every tender, every employment contract lands on your desk. Admin eats the hours you should spend winning projects, meeting clients, or developing your team.",
+    "p2": "The problem isn't that there's too much work. The problem is that everything has to go through you — and no one but you sees the full picture.",
+    "tagPain": "What we hear every day",
+    "quotes": [
+      "I work 60-hour weeks and still feel I'm not really moving anything forward.",
+      "When I take two weeks off, half the office grinds to a halt.",
+      "Accounting, HR, bids, agencies — I'm the last filter for everything."
+    ]
+  },
+  "solution": {
+    "eyebrow": "The solution",
+    "title": "Managed Construction Kit Subscription.",
+    "subtitle": "A modular operating system for your company — set up, run and continuously improved by a network of specialised partners. Not a tool you operate yourself, but a team that runs alongside yours.",
+    "pillars": [
+      {
+        "num": "01",
+        "title": "Co-Produce",
+        "body": "We take over ongoing administration: accounting, HR, procurement, bid coordination. Your operational load drops — immediately, not in six months."
+      },
+      {
+        "num": "02",
+        "title": "Co-Educate",
+        "body": "We train your team in the new processes and tools, instead of just outsourcing them. Knowledge stays in-house, no dependency develops."
+      },
+      {
+        "num": "03",
+        "title": "Co-Innovate",
+        "body": "We bring together methods from engineering, construction and software. Every improvement in one member becomes the standard for the entire network."
+      }
+    ]
+  },
+  "network": {
+    "eyebrow": "The network",
+    "title": "Three partners. Three disciplines. One system.",
+    "subtitle": "Proteus is not a single vendor, but a constellation of operational partners with clear roles.",
+    "partners": [
+      {
+        "name": "Grupo IASA",
+        "discipline": "Engineering · Environmental",
+        "body": "Chilean engineering consultancy with 29 years of experience in mining, water management and port infrastructure. ISO 9001:2015 certified. Brings structured engineering methodology into every mandate."
+      },
+      {
+        "name": "Zebroo",
+        "discipline": "Operations · Process",
+        "body": "Specialists in the operational take-over of administrative functions. Standardise what can be standardised — and identify what should remain your core business."
+      },
+      {
+        "name": "Julasoft",
+        "discipline": "Software · Automation",
+        "body": "Builds and runs the digital layer: tools, dashboards, automations. Whenever software solves the bottleneck, Julasoft steps in."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "First call",
+    "title": "15 minutes. No sales.",
+    "subtitle": "We listen, ask the right questions and tell you honestly whether Proteus fits your company. If it doesn't, we say so just as honestly.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "message": "What is it about?",
+    "consent": "I consent to processing of my data under the privacy policy.",
+    "submit": "Propose a time",
+    "thanks": "Thank you. We'll come back within 24 hours with two time proposals."
+  },
+  "footer": {
+    "company": "Proteus UG (haftungsbeschränkt)",
+    "location": "Celle, Germany",
+    "rights": "All rights reserved",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy"
+  },
+  "cookie": {
+    "text": "We only use technically necessary cookies. No tracking, no marketing.",
+    "accept": "Understood"
+  }
+}

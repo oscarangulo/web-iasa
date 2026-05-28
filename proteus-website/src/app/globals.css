@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { @apply bg-white text-proteus-carbon font-sans; font-feature-settings: 'cv11', 'ss01'; }
+  ::selection { @apply bg-proteus-verde text-white; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-container px-6 md:px-10 lg:px-14; }
+  .eyebrow { @apply text-[11px] font-semibold uppercase tracking-eyebrow text-proteus-verde; }
+  .h-display { @apply text-[44px] md:text-[60px] lg:text-[72px] font-medium leading-[1.0] tracking-tighter2; }
+  .h-section { @apply text-[28px] md:text-[36px] font-medium leading-[1.1] tracking-tightish; }
+  .body-lg { @apply text-[16px] md:text-[18px] leading-relaxed text-[#5C6470]; }
+  .body { @apply text-[15px] leading-relaxed text-[#5C6470]; }
+}
