@@ -10,8 +10,8 @@ const nav = [
   { href: '/proiecta', label: 'PROIECTA' },
   { href: '/proambiente', label: 'PROAMBIENTE' },
   { href: '/proceanic', label: 'PROCEANIC' },
+  { href: '/ingenieria-alemana', label: 'Ingeniería Alemana' },
   { href: '/proyectos', label: 'Proyectos' },
-  { href: '/publicaciones', label: 'Publicaciones' },
   { href: '/sgc', label: 'SGC' },
 ];
 

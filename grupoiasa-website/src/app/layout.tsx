@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 export const metadata: Metadata = {
   metadataBase: new URL('https://grupoiasa.cl'),
   title: {
-    default: 'Grupo IASA · Soluciones globales para la producción y el desarrollo sustentable',
+    default: 'Grupo IASA · Ingeniería, ambiente y mar integrados para proyectos complejos',
     template: '%s · Grupo IASA',
   },
   description:
-    'Consultora chilena de ingeniería integral y consultoría ambiental. PROIECTA, PROAMBIENTE y PROCEANIC. ISO 9001:2015. 29 años de experiencia.',
+    'Ecosistema técnico multidisciplinario chileno. PROIECTA, PROAMBIENTE, PROCEANIC e Ingeniería Alemana. Cuatro especialidades, un equipo. ISO 9001:2015. 29 años acompañando proyectos desde la idea hasta su consolidación.',
   openGraph: {
     type: 'website',
     locale: 'es_CL',

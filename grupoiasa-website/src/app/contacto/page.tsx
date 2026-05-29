@@ -11,10 +11,20 @@ export default function ContactoPage() {
   return (
     <>
       <Hero
-        eyebrow="Contacto"
-        titulo={<>Hablemos del <em className="not-italic text-iasa-azul">próximo proyecto.</em></>}
-        bajada="Respondemos en menos de 48 horas hábiles con una primera lectura técnica del alcance y los permisos involucrados."
+        eyebrow="Construyamos el próximo capítulo"
+        titulo={<>Más que un proveedor: un <em className="not-italic text-iasa-azul">aliado técnico</em> de largo plazo.</>}
+        bajada="En Grupo IASA creemos que los mejores resultados nacen de relaciones de largo plazo. No buscamos ser un proveedor más — buscamos acompañar el crecimiento de sus proyectos, reducir incertidumbre y aportar soluciones cuando más se necesitan."
       />
+
+      <section className="container-x pt-10">
+        <div className="max-w-3xl border-l-2 border-iasa-azul pl-6 py-1">
+          <p className="text-[16px] md:text-[17px] leading-relaxed text-carbon">
+            Cuando trabaja con Grupo IASA, no incorpora solamente una consultora.
+            Incorpora un equipo multidisciplinario comprometido con el éxito de
+            su proyecto.
+          </p>
+        </div>
+      </section>
 
       <section className="container-x py-20 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7">
@@ -53,11 +63,11 @@ export default function ContactoPage() {
                   className="w-full border border-gris-borde bg-white rounded-sm px-4 py-3 text-[15px] focus:border-iasa-azul focus:outline-none focus:ring-1 focus:ring-iasa-azul"
                   defaultValue=""
                 >
-                  <option value="" disabled>Seleccione una división</option>
+                  <option value="" disabled>Seleccione una especialidad</option>
                   {divisiones.map((d) => (
                     <option key={d.slug} value={d.slug}>{d.nombre} · {d.bajada}</option>
                   ))}
-                  <option value="general">Consulta general</option>
+                  <option value="general">Conversación general / multidisciplinaria</option>
                 </select>
               </div>
 
@@ -81,14 +91,22 @@ export default function ContactoPage() {
                 </label>
               </div>
 
-              <button
-                type="submit"
-                disabled={loading}
-                className="inline-flex items-center gap-2 rounded-full bg-iasa-azul px-6 py-3 text-[14px] font-medium text-white hover:bg-iasa-azul-dark disabled:opacity-50 transition-colors"
-              >
-                {loading ? 'Enviando…' : 'Enviar mensaje'}
-                <span aria-hidden>→</span>
-              </button>
+              <div className="flex flex-wrap items-center gap-3">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="inline-flex items-center gap-2 rounded-full bg-iasa-azul px-6 py-3 text-[14px] font-medium text-white hover:bg-iasa-azul-dark disabled:opacity-50 transition-colors"
+                >
+                  {loading ? 'Enviando…' : 'Quiero conversar mi proyecto'}
+                  <span aria-hidden>→</span>
+                </button>
+                <a
+                  href="/nosotros"
+                  className="inline-flex items-center gap-2 rounded-full border border-carbon/15 bg-white px-6 py-3 text-[14px] font-medium text-carbon transition-colors hover:border-carbon/30"
+                >
+                  Conocer al equipo Grupo IASA
+                </a>
+              </div>
 
               <p className="text-[12px] text-gris-medio">
                 Sus datos se envían directamente al CRM Odoo del Grupo IASA. Sin terceros, sin tracking de marketing.

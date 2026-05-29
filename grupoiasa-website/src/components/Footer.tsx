@@ -12,10 +12,10 @@ export function Footer() {
             </div>
           </div>
           <div className="mt-5 text-[10px] uppercase tracking-eyebrow text-white/50">
-            Soluciones globales para la producción y el desarrollo sustentable
+            Cuatro especialidades. Un equipo. Un mismo método.
           </div>
           <p className="mt-6 max-w-md text-[14px] leading-relaxed text-white/60">
-            Consultora chilena de ingeniería y consultoría ambiental. ISO 9001:2015. 29 años acompañando a la industria minera, sanitaria, energética y portuaria.
+            Ecosistema técnico multidisciplinario chileno. Ingeniería, ambiente, ciencias del mar y know-how alemán integrados para acompañar proyectos complejos desde la idea hasta su consolidación. ISO 9001:2015 · 29 años.
           </p>
         </div>
 
@@ -25,6 +25,7 @@ export function Footer() {
             <li><Link href="/proiecta" className="hover:text-white">PROIECTA</Link></li>
             <li><Link href="/proambiente" className="hover:text-white">PROAMBIENTE</Link></li>
             <li><Link href="/proceanic" className="hover:text-white">PROCEANIC</Link></li>
+            <li><Link href="/ingenieria-alemana" className="hover:text-white">Ingeniería Alemana</Link></li>
           </ul>
         </div>
 

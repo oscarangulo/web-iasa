@@ -1,4 +1,4 @@
-export type DivisionSlug = 'proiecta' | 'proambiente' | 'proceanic';
+export type DivisionSlug = 'proiecta' | 'proambiente' | 'proceanic' | 'ingenieria-alemana';
 
 export type Servicio = {
   titulo: string;
@@ -159,6 +159,41 @@ export const divisiones: Division[] = [
       'Una de las pocas consultoras chilenas con cobertura SHOA + DHI MIKE',
       'Integración con PROAMBIENTE para permisos ambientales marítimos',
       'Experiencia en emisarios, dragados y terminales portuarios',
+    ],
+  },
+  {
+    slug: 'ingenieria-alemana',
+    nombre: 'Ingeniería Alemana',
+    bajada: 'Know-how y soporte técnico',
+    descripcion:
+      'Estela de prestigio profesional, metodología europea y respaldo técnico para proyectos complejos. Experiencia transversal en ingeniería, sostenibilidad y gestión de operaciones industriales.',
+    colorHex: '#F2C811',
+    colorClass: 'bg-iasa-amarillo',
+    borderClass: 'border-iasa-amarillo',
+    textClass: 'text-iasa-amarillo',
+    bgSoftClass: 'bg-iasa-amarillo/5',
+    logo: '/divisions/ingenieria-alemana.webp',
+    servicios: [
+      {
+        titulo: 'Asesoría estratégica',
+        descripcion:
+          'Acompañamiento ejecutivo en decisiones técnicas y regulatorias de alta complejidad: gestión de relaciones, alianzas estratégicas y visión integral de proyectos industriales.',
+      },
+      {
+        titulo: 'Transferencia de know-how europeo',
+        descripcion:
+          'Metodología, estándares y prácticas de ingeniería europea aplicadas al contexto chileno. Cradle to Cradle, economía circular y transición climática.',
+      },
+      {
+        titulo: 'Sponsorship técnico',
+        descripcion:
+          'Respaldo de expertise senior en revisiones críticas, validación de propuestas y diálogo con gerencias corporativas de los clientes.',
+      },
+    ],
+    porQue: [
+      'Estela de prestigio profesional con 30+ años de trayectoria',
+      'Puente cultural y técnico con prácticas europeas',
+      'Hablante natural en conversaciones estratégicas con gerencias corporativas',
     ],
   },
 ];

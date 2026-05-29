@@ -97,6 +97,21 @@ export const proyectos: Proyecto[] = [
     ],
   },
   {
+    slug: 'santiago-recicla',
+    nombre: 'Santiago Recicla · Gestión municipal de residuos',
+    cliente: 'Municipios Región Metropolitana',
+    ano: '2019–2023',
+    division: 'proambiente',
+    sector: 'Residuos urbanos',
+    resumen:
+      'Diagnóstico, planes maestros de RSD y diseño de infraestructura para programas municipales de reciclaje y valorización.',
+    detalle: [
+      'Levantamiento de generación per cápita y caracterización de RSD por comuna.',
+      'Diseño de puntos limpios, estaciones de transferencia y rutas logísticas.',
+      'Planes maestros con metas Ley REP y coordinación con SUBDERE / MMA.',
+    ],
+  },
+  {
     slug: 'obras-costeras',
     nombre: 'Estudios y obras costeras',
     cliente: 'Clientes confidenciales',
