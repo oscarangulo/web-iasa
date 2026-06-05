@@ -69,7 +69,7 @@ export function MagnitudProyectos() {
           </Link>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {magnitudes.map((m, i) => (
             <motion.div
               key={m.slug}
@@ -80,34 +80,36 @@ export function MagnitudProyectos() {
             >
               <Link
                 href={`/proyectos/${m.slug}`}
-                className="group flex h-full flex-col bg-white border border-gris-borde p-6 md:p-7 transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(15,28,55,0.18)]"
+                className="group flex h-full flex-col rounded-lg border border-gris-borde bg-white p-7 transition-all hover:-translate-y-1 hover:border-transparent hover:shadow-[0_24px_50px_-24px_rgba(15,28,55,0.25)]"
               >
-                <div className="h-1.5 w-12" style={{ background: m.color }} />
-                <div className="mt-6 text-[22px] md:text-[24px] font-medium tracking-tightish text-carbon">
-                  {m.nombre}
-                </div>
-                <div className="mt-1 text-[13px] text-gris-medio leading-snug">
-                  {m.sub}
+                {/* Encabezado — altura fija para alinear el resto entre tarjetas */}
+                <div className="flex min-h-[112px] flex-col">
+                  <span className="h-1.5 w-10 rounded-full" style={{ background: m.color }} />
+                  <h3 className="mt-5 text-[22px] font-medium leading-tight tracking-tightish text-carbon">
+                    {m.nombre}
+                  </h3>
+                  <p className="mt-1.5 text-[12.5px] leading-snug text-gris-medio">{m.sub}</p>
                 </div>
 
-                <div className="mt-7 space-y-3 border-t border-gris-borde pt-5">
+                {/* Cifras — cada una en su fila, número y unidad alineados a baseline */}
+                <dl className="mt-2 divide-y divide-gris-borde border-t border-gris-borde">
                   {m.cifras.map((c) => (
-                    <div key={c.v} className="flex items-baseline gap-2">
-                      <span
-                        className="text-[26px] md:text-[28px] font-medium tracking-tighter2 leading-none"
+                    <div key={c.v} className="flex items-baseline justify-between gap-3 py-3">
+                      <dt
+                        className="text-[27px] font-medium leading-none tracking-tighter2 tabular-nums"
                         style={{ color: m.color }}
                       >
                         {c.v}
-                      </span>
-                      <span className="text-[12px] uppercase tracking-eyebrow text-gris-medio">
+                      </dt>
+                      <dd className="text-[11px] uppercase tracking-eyebrow text-gris-medio">
                         {c.u}
-                      </span>
+                      </dd>
                     </div>
                   ))}
-                </div>
+                </dl>
 
                 <div
-                  className="mt-auto flex items-center gap-2 pt-7 text-[12.5px] font-medium"
+                  className="mt-auto flex items-center gap-2 pt-6 text-[12.5px] font-medium"
                   style={{ color: m.color }}
                 >
                   Ver ficha

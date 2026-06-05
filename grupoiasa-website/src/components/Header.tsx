@@ -21,15 +21,15 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-gris-borde bg-white/85 backdrop-blur">
-      <div className="container-x flex h-16 items-center justify-between">
+      <div className="container-x flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
           <Image
-            src="/logo-iasa.webp"
+            src="/logo-iasa.png"
             alt="Grupo IASA"
-            width={140}
-            height={40}
+            width={281}
+            height={273}
             priority
-            className="h-9 w-auto"
+            className="h-12 w-auto md:h-14"
           />
           <div className="hidden sm:block leading-none pl-3 border-l border-gris-borde">
             <div className="text-[10px] uppercase tracking-eyebrow text-gris-medio">29 años</div>

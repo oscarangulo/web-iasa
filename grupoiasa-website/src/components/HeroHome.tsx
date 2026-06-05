@@ -33,15 +33,15 @@ export function HeroHome() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.05 }}
-          className="mt-7 flex items-center gap-6 bg-white/95 rounded-sm p-4 md:p-5 w-fit"
+          className="mt-7 w-fit"
         >
           <Image
-            src="/logo-iasa.webp"
+            src="/logo-iasa-white.png"
             alt="Grupo IASA"
-            width={220}
-            height={64}
+            width={281}
+            height={273}
             priority
-            className="h-12 md:h-14 w-auto"
+            className="h-24 w-auto md:h-28"
           />
         </motion.div>
 

@@ -7,9 +7,7 @@ export function Footer() {
       <div className="container-x py-16 grid gap-10 md:grid-cols-12">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3">
-            <div className="bg-white/95 rounded-sm p-2">
-              <Image src="/logo-iasa.webp" alt="Grupo IASA" width={160} height={45} className="h-10 w-auto" />
-            </div>
+            <Image src="/logo-iasa-white.png" alt="Grupo IASA" width={281} height={273} className="h-16 w-auto" />
           </div>
           <div className="mt-5 text-[10px] uppercase tracking-eyebrow text-white/50">
             Cuatro especialidades. Un equipo. Un mismo método.
