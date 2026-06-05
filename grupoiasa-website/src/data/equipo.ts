@@ -34,7 +34,7 @@ export const equipo: Miembro[] = [
   { nombre: 'Carlos Riquelme', cargo: 'Dibujante Proyectista', foto: '/team/carlos.webp', division: 'plataforma' },
   // Administración
   { nombre: 'Maryelin Lucero', cargo: 'Analista Contable', foto: '/team/mary.webp', division: 'plataforma' },
-  // Claudina Páez · Asistente Administración — sin foto disponible aún
+  { nombre: 'Claudina Páez', cargo: 'Asistente de Administración', foto: '/team/pilo.webp', division: 'plataforma' },
 ];
 
 export const plataformas = [

@@ -95,7 +95,6 @@ export default function NosotrosPage() {
           </div>
           <p className="mt-14 text-[12px] text-gris-medio max-w-2xl">
             Equipo y cargos según documento interno «Ecosistema Grupo IASA» — mayo 2026.
-            Claudina Páez · Asistente Administración (sin foto disponible aún).
           </p>
         </div>
       </section>

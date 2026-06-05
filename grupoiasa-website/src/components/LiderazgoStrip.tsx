@@ -44,6 +44,7 @@ const lideres: Lider[] = [
   {
     nombre: 'Miguel Cadenasso',
     cargo: 'Liderazgo técnico · Modelación numérica',
+    foto: '/team/miguel.webp',
     accent: '#B6612A',
   },
 ];
