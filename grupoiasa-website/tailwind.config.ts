@@ -8,6 +8,7 @@ const config: Config = {
         iasa: {
           azul: '#2C5FA1',
           'azul-dark': '#1F4778',
+          petroleo: '#0B1E36',
           verde: '#0F9649',
           naranja: '#B6612A',
           amarillo: '#F2C811',

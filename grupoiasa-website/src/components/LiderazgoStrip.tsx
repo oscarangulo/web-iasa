@@ -66,14 +66,14 @@ export function LiderazgoStrip() {
           <div className="md:col-span-7">
             <div className="flex items-center gap-3">
               <span className="h-px w-8 bg-iasa-azul" />
-              <span className="eyebrow">Liderado por especialistas</span>
+              <span className="eyebrow">Equipo</span>
             </div>
             <h2 className="h-section mt-6 text-carbon">
-              Décadas de experiencia, un mismo equipo técnico.
+              Liderado por especialistas con visión integrada.
             </h2>
             <p className="body-lg mt-4 max-w-2xl">
-              No incorpora una consultora. Incorpora un equipo multidisciplinario
-              comprometido con el éxito de su proyecto.
+              Un equipo técnico senior y liderazgos por especialidad que
+              respaldan el acompañamiento estratégico del Grupo.
             </p>
           </div>
           <div className="md:col-span-5 md:text-right">

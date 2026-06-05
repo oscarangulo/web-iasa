@@ -40,7 +40,7 @@ export default function SgcPage() {
         <p className="body-lg mt-6 max-w-3xl">
           El alcance de nuestra certificación cubre <strong className="text-carbon">servicios
           interdisciplinarios de ingeniería, auditoría y consultoría en medio ambiente, gestión de
-          recursos naturales, residuos y energía</strong> — para las empresas que componen el Grupo IASA.
+          recursos naturales, residuos y energía</strong> para las empresas que componen el Grupo IASA.
         </p>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">

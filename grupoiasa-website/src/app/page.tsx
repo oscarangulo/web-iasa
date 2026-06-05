@@ -1,22 +1,26 @@
 import { HeroHome } from '@/components/HeroHome';
-import { PurposeBlock } from '@/components/PurposeBlock';
 import { Ecosystem } from '@/components/Ecosystem';
+import { PurposeBlock } from '@/components/PurposeBlock';
+import { VisionEstrategica } from '@/components/VisionEstrategica';
 import { LegacyTimeline } from '@/components/LegacyTimeline';
-import { MagnitudProyectos } from '@/components/MagnitudProyectos';
-import { LiderazgoStrip } from '@/components/LiderazgoStrip';
 import { PromesaMarca } from '@/components/PromesaMarca';
-import { MensajeFinal } from '@/components/MensajeFinal';
+import { MagnitudProyectos } from '@/components/MagnitudProyectos';
+import { CalidadRespalda } from '@/components/CalidadRespalda';
+import { LiderazgoStrip } from '@/components/LiderazgoStrip';
 import { ClientStrip } from '@/components/ClientStrip';
+import { MensajeFinal } from '@/components/MensajeFinal';
 
 export default function HomePage() {
   return (
     <>
       <HeroHome />
-      <PurposeBlock />
       <Ecosystem />
+      <PurposeBlock />
+      <VisionEstrategica />
       <LegacyTimeline />
-      <MagnitudProyectos />
       <PromesaMarca />
+      <MagnitudProyectos />
+      <CalidadRespalda />
       <LiderazgoStrip />
       <ClientStrip />
       <MensajeFinal />

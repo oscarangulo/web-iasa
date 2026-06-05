@@ -13,7 +13,7 @@ export default function ContactoPage() {
       <Hero
         eyebrow="Construyamos el próximo capítulo"
         titulo={<>Más que un proveedor: un <em className="not-italic text-iasa-azul">aliado técnico</em> de largo plazo.</>}
-        bajada="En Grupo IASA creemos que los mejores resultados nacen de relaciones de largo plazo. No buscamos ser un proveedor más — buscamos acompañar el crecimiento de sus proyectos, reducir incertidumbre y aportar soluciones cuando más se necesitan."
+        bajada="En Grupo IASA creemos que los mejores resultados nacen de relaciones de largo plazo. No buscamos ser un proveedor más: buscamos acompañar el crecimiento de sus proyectos, reducir incertidumbre y aportar soluciones cuando más se necesitan."
       />
 
       <section className="container-x pt-10">
@@ -134,7 +134,7 @@ export default function ContactoPage() {
             <div className="eyebrow">Horario</div>
             <div className="mt-3 text-[15px] text-carbon">
               Lunes a viernes<br />
-              09:00 — 18:30 (CLT)
+              09:00 a 18:30 (CLT)
             </div>
           </div>
           <div className="aspect-[4/3] bg-crema border border-gris-borde rounded-sm overflow-hidden">

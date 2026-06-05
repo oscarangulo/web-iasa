@@ -74,14 +74,14 @@ export function HeroHome() {
         >
           <Link
             href="/contacto"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[14px] font-medium text-carbon transition-transform hover:-translate-y-px"
+            className="inline-flex items-center gap-2 rounded-full bg-iasa-amarillo px-6 py-3 text-[14px] font-semibold text-iasa-petroleo transition-transform hover:-translate-y-px"
           >
             Quiero conversar mi proyecto
             <span aria-hidden>→</span>
           </Link>
           <Link
             href="/nosotros"
-            className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-[14px] font-medium text-white transition-colors hover:border-white/55"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[14px] font-medium text-carbon transition-transform hover:-translate-y-px"
           >
             Conocer al equipo Grupo IASA
           </Link>

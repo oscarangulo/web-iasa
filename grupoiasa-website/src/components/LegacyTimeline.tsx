@@ -28,7 +28,7 @@ export function LegacyTimeline() {
           Acompañamos cada etapa del ciclo de vida.
         </h2>
         <p className="mt-4 max-w-2xl text-[16px] leading-relaxed text-white/65">
-          Desde la cuna a la tumba — y de la cuna a la cuna. Nueve etapas, un
+          Desde la cuna a la tumba, y de la cuna a la cuna. Nueve etapas, un
           mismo equipo técnico que entra cuando el proyecto es apenas una idea
           y permanece hasta que entrega valor de largo plazo.
         </p>

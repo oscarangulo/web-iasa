@@ -21,7 +21,7 @@ export default function NosotrosPage() {
       <Hero
         eyebrow="Nosotros"
         titulo={<>Ingeniería y consultoría ambiental <em className="not-italic text-iasa-azul">desde la cuna a la tumba.</em></>}
-        bajada="29 años integrando ingeniería civil, consultoría ambiental y ciencias del mar. Tres empresas operativas — un equipo senior compartido y una misma cultura de trabajo en Providencia, Santiago."
+        bajada="29 años integrando ingeniería civil, consultoría ambiental y ciencias del mar. Tres empresas operativas, un equipo senior compartido y una misma cultura de trabajo en Providencia, Santiago."
       />
 
       <section className="container-x py-20 md:py-28 grid gap-12 lg:grid-cols-12">
@@ -29,7 +29,7 @@ export default function NosotrosPage() {
           <SectionTitle eyebrow="Misión" titulo="Decisiones de proyecto bien tomadas." />
           <p className="body-lg mt-6">
             Acompañar a nuestros clientes en cada fase de un proyecto de infraestructura o industria
-            — desde la búsqueda del emplazamiento hasta el plan de cierre — entregando ingeniería
+            (desde la búsqueda del emplazamiento hasta el plan de cierre) entregando ingeniería
             sólida, criterio regulatorio y permisos tramitados con disciplina.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function NosotrosPage() {
             ))}
           </div>
           <p className="mt-14 text-[12px] text-gris-medio max-w-2xl">
-            Equipo y cargos según documento interno «Ecosistema Grupo IASA» — mayo 2026.
+            Equipo y cargos según documento interno «Ecosistema Grupo IASA», mayo 2026.
           </p>
         </div>
       </section>
