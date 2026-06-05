@@ -20,7 +20,7 @@ export const equipo: Miembro[] = [
   { nombre: 'Carolina Casanova', cargo: 'Gerencia de Operaciones', foto: '/team/carolina.webp', division: 'corporativo' },
   // Liderazgos divisionales
   { nombre: 'Javier Medina', cargo: 'Liderazgo PROIECTA · Ingeniería civil', foto: '/team/javier.webp', division: 'proiecta' },
-  { nombre: 'Nicolás Curkovic', cargo: 'Liderazgo PROIECTA · Diseño industrial', foto: '/team/nicolas.webp', division: 'proiecta' },
+  { nombre: 'Nicolás Curkovic', cargo: 'Liderazgo PROIECTA · Diseño industrial', foto: '/team/nico.webp', division: 'proiecta' },
   { nombre: 'Yamina Pérez', cargo: 'Liderazgo PROAMBIENTE · Ingeniería ambiental', foto: '/team/yamina.webp', division: 'proambiente' },
   // Jefatura de proyectos
   { nombre: 'Cristian Fonseca', cargo: 'Jefe de Proyectos · Ing. Civil', foto: '/team/cristian.webp', division: 'plataforma' },

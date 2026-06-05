@@ -27,7 +27,7 @@ const lideres: Lider[] = [
   {
     nombre: 'Nicolás Curkovic',
     cargo: 'Liderazgo PROIECTA · Diseño industrial',
-    foto: '/team/nicolas.webp',
+    foto: '/team/nico.webp',
     accent: '#2C5FA1',
   },
   {
