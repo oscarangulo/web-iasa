@@ -80,7 +80,7 @@ export function MagnitudProyectos() {
             >
               <Link
                 href={`/proyectos/${m.slug}`}
-                className="group block bg-white border border-gris-borde h-full p-6 md:p-7 transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(15,28,55,0.18)]"
+                className="group flex h-full flex-col bg-white border border-gris-borde p-6 md:p-7 transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(15,28,55,0.18)]"
               >
                 <div className="h-1.5 w-12" style={{ background: m.color }} />
                 <div className="mt-6 text-[22px] md:text-[24px] font-medium tracking-tightish text-carbon">
@@ -90,7 +90,7 @@ export function MagnitudProyectos() {
                   {m.sub}
                 </div>
 
-                <div className="mt-7 space-y-3 pt-5 border-t border-gris-borde">
+                <div className="mt-7 space-y-3 border-t border-gris-borde pt-5">
                   {m.cifras.map((c) => (
                     <div key={c.v} className="flex items-baseline gap-2">
                       <span
@@ -107,7 +107,7 @@ export function MagnitudProyectos() {
                 </div>
 
                 <div
-                  className="mt-7 flex items-center gap-2 text-[12.5px] font-medium"
+                  className="mt-auto flex items-center gap-2 pt-7 text-[12.5px] font-medium"
                   style={{ color: m.color }}
                 >
                   Ver ficha

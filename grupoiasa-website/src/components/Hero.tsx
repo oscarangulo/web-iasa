@@ -17,7 +17,7 @@ export function Hero({ eyebrow, titulo, bajada, ctaPrimario, ctaSecundario, acce
   return (
     <section className="relative overflow-hidden border-b border-gris-borde">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-crema to-white" />
-      <div className="container-x py-20 md:py-28 lg:py-32 max-w-5xl">
+      <div className="container-x py-20 md:py-28 lg:py-32">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}

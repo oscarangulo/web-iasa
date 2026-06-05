@@ -4,7 +4,7 @@
 
 @layer base {
   html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-  body { @apply bg-white text-carbon font-sans; font-feature-settings: 'cv11', 'ss01'; }
+  body { @apply bg-white text-carbon font-sans; font-feature-settings: 'cv11', 'ss01'; overflow-x: clip; }
   ::selection { @apply bg-iasa-azul text-white; }
 }
 
