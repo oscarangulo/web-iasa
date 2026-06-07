@@ -7,6 +7,24 @@ import { divisiones } from '@/data/divisiones';
 export default function ContactoPage() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError(null);
+    setLoading(true);
+    try {
+      // Envío al CRM (placeholder). Lanza si la red o el servidor fallan.
+      await new Promise((resolve) => setTimeout(resolve, 700));
+      setSent(true);
+    } catch {
+      setError(
+        'No pudimos enviar su mensaje. Revise su conexión e inténtelo de nuevo, o escríbanos a contacto@grupoiasa.cl.'
+      );
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <>
@@ -17,7 +35,7 @@ export default function ContactoPage() {
       />
 
       <section className="container-x pt-10">
-        <div className="max-w-3xl border-l-2 border-iasa-azul pl-6 py-1">
+        <div className="max-w-3xl rounded-lg bg-iasa-azul/[0.05] p-6 md:p-7">
           <p className="text-[16px] md:text-[17px] leading-relaxed text-carbon">
             Cuando trabaja con Grupo IASA, no incorpora solamente una consultora.
             Incorpora un equipo multidisciplinario comprometido con el éxito de
@@ -29,7 +47,11 @@ export default function ContactoPage() {
       <section className="container-x py-20 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7">
           {sent ? (
-            <div className="border border-iasa-verde/30 bg-iasa-verde/5 p-10 rounded-sm">
+            <div
+              role="status"
+              aria-live="polite"
+              className="border border-iasa-verde/30 bg-iasa-verde/5 p-10 rounded-sm"
+            >
               <div className="text-[12px] uppercase tracking-eyebrow text-iasa-verde">Mensaje recibido</div>
               <h3 className="h-section mt-3">Gracias por su mensaje.</h3>
               <p className="body-lg mt-3">
@@ -37,14 +59,16 @@ export default function ContactoPage() {
               </p>
             </div>
           ) : (
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setLoading(true);
-                setTimeout(() => { setLoading(false); setSent(true); }, 700);
-              }}
-              className="space-y-5"
-            >
+            <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+              {error && (
+                <div
+                  role="alert"
+                  aria-live="assertive"
+                  className="rounded-sm border border-iasa-naranja/40 bg-iasa-naranja/[0.06] px-4 py-3 text-[14px] text-carbon"
+                >
+                  {error}
+                </div>
+              )}
               <div className="grid sm:grid-cols-2 gap-5">
                 <Field label="Nombre" name="nombre" required />
                 <Field label="Empresa" name="empresa" />

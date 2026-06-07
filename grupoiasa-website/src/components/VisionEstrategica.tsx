@@ -32,7 +32,7 @@ export function VisionEstrategica() {
                 Visión estratégica
               </span>
             </div>
-            <h2 className="mt-6 max-w-2xl text-[30px] font-medium leading-[1.12] tracking-tighter2 text-carbon md:text-[40px]">
+            <h2 className="mt-6 max-w-2xl font-display text-[30px] font-semibold leading-[1.12] tracking-tighter2 text-carbon md:text-[40px]">
               Modelo de Asesoría Estratégica Proactiva.
             </h2>
           </div>

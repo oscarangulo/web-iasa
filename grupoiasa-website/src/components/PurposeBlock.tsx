@@ -20,7 +20,7 @@ export function PurposeBlock() {
               ¿Por qué existe Grupo IASA?
             </span>
           </div>
-          <h2 className="mt-6 max-w-xl text-[30px] font-medium leading-[1.12] tracking-tighter2 text-carbon md:text-[40px]">
+          <h2 className="mt-6 max-w-xl font-display text-[30px] font-semibold leading-[1.12] tracking-tighter2 text-carbon md:text-[40px]">
             Los proyectos complejos rara vez fallan por una sola razón.
           </h2>
           <div className="mt-7 max-w-xl space-y-5 text-justify text-[15px] leading-relaxed text-gris-medio md:text-[16px]">
@@ -55,8 +55,8 @@ export function PurposeBlock() {
                 proyectos viables, ejecutables y sostenibles.
               </p>
               <p className="mt-4 text-justify text-[14px] leading-relaxed text-white/75">
-                Reducimos incertidumbre para que las decisiones críticas se
-                tomen con evidencia.
+                Acompañamos cada decisión con criterio técnico, desde la
+                planificación hasta el cierre y el legado del proyecto.
               </p>
             </div>
           </div>

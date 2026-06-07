@@ -18,7 +18,7 @@ export function Footer() {
         </div>
 
         <div className="md:col-span-3">
-          <div className="text-[11px] uppercase tracking-eyebrow text-white/40 mb-4">Empresas</div>
+          <div className="text-[11px] uppercase tracking-eyebrow text-white/55 mb-4">Empresas</div>
           <ul className="space-y-2 text-[14px]">
             <li><Link href="/proiecta" className="hover:text-white">PROIECTA</Link></li>
             <li><Link href="/proambiente" className="hover:text-white">PROAMBIENTE</Link></li>
@@ -28,7 +28,7 @@ export function Footer() {
         </div>
 
         <div className="md:col-span-2">
-          <div className="text-[11px] uppercase tracking-eyebrow text-white/40 mb-4">Empresa</div>
+          <div className="text-[11px] uppercase tracking-eyebrow text-white/55 mb-4">Empresa</div>
           <ul className="space-y-2 text-[14px]">
             <li><Link href="/nosotros" className="hover:text-white">Nosotros</Link></li>
             <li><Link href="/proyectos" className="hover:text-white">Proyectos</Link></li>
@@ -38,7 +38,7 @@ export function Footer() {
         </div>
 
         <div className="md:col-span-2">
-          <div className="text-[11px] uppercase tracking-eyebrow text-white/40 mb-4">Contacto</div>
+          <div className="text-[11px] uppercase tracking-eyebrow text-white/55 mb-4">Contacto</div>
           <address className="not-italic text-[14px] leading-relaxed text-white/70">
             Av. Providencia 2653<br />Of. 1308<br />Providencia, Santiago
           </address>
@@ -46,7 +46,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-x py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[12px] text-white/40">
+        <div className="container-x py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[12px] text-white/55">
           <div>© {new Date().getFullYear()} Grupo IASA · Todos los derechos reservados</div>
           <div className="flex items-center gap-4">
             <span>ISO 9001:2015 · AENOR · ER-0538/2024</span>

@@ -18,7 +18,7 @@ export function PromesaMarca() {
             <span className="eyebrow">Nuestro compromiso</span>
             <span className="h-px w-8 bg-iasa-azul" />
           </div>
-          <p className="mt-8 text-balance text-[30px] md:text-[40px] lg:text-[46px] font-medium tracking-tighter2 leading-[1.12] text-carbon">
+          <p className="mt-8 text-balance font-display text-[30px] md:text-[40px] lg:text-[46px] font-semibold tracking-tighter2 leading-[1.12] text-carbon">
             Reducimos incertidumbre para que las{' '}
             <em className="not-italic text-iasa-azul">decisiones críticas</em>{' '}
             se tomen con evidencia.

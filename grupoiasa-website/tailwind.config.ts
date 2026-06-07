@@ -20,7 +20,8 @@ const config: Config = {
         'gris-borde': '#E5E5E5',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['var(--font-display)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       letterSpacing: {
         tightish: '-0.015em',

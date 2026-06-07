@@ -21,7 +21,7 @@ export function CalidadRespalda() {
                 Experiencia que respalda
               </span>
             </div>
-            <h2 className="mt-6 text-[34px] font-semibold leading-[1.05] tracking-tighter2 md:text-[44px]">
+            <h2 className="mt-6 font-display text-[34px] font-semibold leading-[1.05] tracking-tighter2 md:text-[44px]">
               Calidad que garantiza.
             </h2>
             <div className="mt-8 flex items-baseline gap-3">

@@ -1,10 +1,18 @@
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Archivo } from 'next/font/google';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
+// Inter para cuerpo (legibilidad, pedido por el cliente).
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+// Archivo (grotesca técnica) solo para grandes titulares: presencia de "plano de ingeniería".
+const archivo = Archivo({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['600', '700'],
+  display: 'swap',
+});
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -29,7 +37,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={inter.variable}>
+    <html lang="es" className={`${inter.variable} ${archivo.variable}`}>
       <body>
         <Header />
         <main>{children}</main>
