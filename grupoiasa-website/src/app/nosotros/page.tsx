@@ -12,7 +12,7 @@ const hitos = [
   { ano: '2015', texto: 'Diseño del Depósito de Seguridad CIGRI Til-Til (3.000.000 m³).' },
   { ano: '2018', texto: 'Estudios SPPC y saneamiento de suelos para Barrick, KDM, CMPC, Aguas Andinas.' },
   { ano: '2024', texto: 'Certificación ISO 9001:2015 renovada por AENOR · vigente hasta 2027.' },
-  { ano: '2026', texto: '29 años de operación continua. Cartera activa con Anglo American, BHP, Antofagasta Minerals.' },
+  { ano: '2026', texto: '30 años de operación continua. Cartera activa con Anglo American, BHP, Antofagasta Minerals.' },
 ];
 
 export default function NosotrosPage() {
@@ -21,7 +21,7 @@ export default function NosotrosPage() {
       <Hero
         eyebrow="Nosotros"
         titulo={<>Ingeniería y consultoría ambiental <em className="not-italic text-iasa-azul">desde la cuna a la tumba.</em></>}
-        bajada="29 años integrando ingeniería civil, consultoría ambiental y ciencias del mar. Tres empresas operativas, un equipo senior compartido y una misma cultura de trabajo en Providencia, Santiago."
+        bajada="30 años integrando ingeniería civil, consultoría ambiental y ciencias del mar. Tres empresas operativas, un equipo senior compartido y una misma cultura de trabajo en Providencia, Santiago."
       />
 
       <section className="container-x py-20 md:py-28 grid gap-12 lg:grid-cols-12">
@@ -69,7 +69,7 @@ export default function NosotrosPage() {
 
       {/* Línea de tiempo */}
       <section className="container-x py-20 md:py-24">
-        <SectionTitle eyebrow="Trayectoria" titulo="29 años de operación continua." />
+        <SectionTitle eyebrow="Trayectoria" titulo="30 años de operación continua." />
         <ol className="mt-12 grid gap-y-8 md:grid-cols-2 md:gap-x-16">
           {hitos.map((h) => (
             <li key={h.ano} className="grid grid-cols-[100px_1fr] gap-4">

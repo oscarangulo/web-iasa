@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: '%s · Grupo IASA',
   },
   description:
-    'Ecosistema técnico multidisciplinario chileno. PROIECTA, PROAMBIENTE, PROCEANIC e Ingeniería Alemana. Cuatro especialidades, un equipo. ISO 9001:2015. 29 años acompañando proyectos desde la idea hasta su consolidación.',
+    'Ecosistema técnico multidisciplinario chileno. PROIECTA, PROAMBIENTE, PROCEANIC e Ingeniería Alemana. Cuatro especialidades, un equipo. ISO 9001:2015. 30 años acompañando proyectos desde la idea hasta su consolidación.',
   openGraph: {
     type: 'website',
     locale: 'es_CL',

@@ -11,6 +11,7 @@ const nav = [
   { href: '/proambiente', label: 'PROAMBIENTE' },
   { href: '/proceanic', label: 'PROCEANIC' },
   { href: '/ingenieria-alemana', label: 'Ingeniería Alemana' },
+  { href: '/servicios', label: 'Servicios' },
   { href: '/proyectos', label: 'Proyectos' },
   { href: '/sgc', label: 'SGC' },
 ];
@@ -32,7 +33,7 @@ export function Header() {
             className="h-12 w-auto md:h-14"
           />
           <div className="hidden sm:block leading-none pl-3 border-l border-gris-borde">
-            <div className="text-[10px] uppercase tracking-eyebrow text-gris-medio">29 años</div>
+            <div className="text-[10px] uppercase tracking-eyebrow text-gris-medio">30 años</div>
             <div className="text-[10px] uppercase tracking-eyebrow text-gris-medio mt-0.5">Ingeniería · Ambiente · Mar</div>
           </div>
         </Link>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Servicio } from '@/data/divisiones';
 
@@ -29,38 +30,48 @@ export function ServiciosLista({ servicios, accent }: Props) {
               >
                 {String(i + 1).padStart(2, '0')}
               </div>
-              <div className="flex-1">
-                <div className="flex items-center justify-between gap-6">
-                  <h3 className="text-[18px] md:text-[22px] font-medium tracking-tightish text-carbon">
-                    {s.titulo}
-                  </h3>
-                  <span
-                    className={`shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-full border transition-transform ${
-                      isOpen ? 'rotate-45' : ''
-                    }`}
-                    style={{ borderColor: `${accent}55`, color: accent }}
-                    aria-hidden
-                  >
-                    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.8">
-                      <path d="M12 5v14M5 12h14" />
-                    </svg>
-                  </span>
-                </div>
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                      className="overflow-hidden"
-                    >
-                      <p className="body-lg mt-4 max-w-3xl">{s.descripcion}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+              <div className="flex flex-1 items-center justify-between gap-6">
+                <h3 className="text-[18px] md:text-[22px] font-medium tracking-tightish text-carbon">
+                  {s.titulo}
+                </h3>
+                <span
+                  className={`shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-full border transition-transform ${
+                    isOpen ? 'rotate-45' : ''
+                  }`}
+                  style={{ borderColor: `${accent}55`, color: accent }}
+                  aria-hidden
+                >
+                  <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                </span>
               </div>
             </button>
+            <AnimatePresence initial={false}>
+              {isOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  className="overflow-hidden"
+                >
+                  <div className="pl-16 pb-7">
+                    <p className="body-lg max-w-3xl">{s.descripcion}</p>
+                    {s.servicioRapidoId && (
+                      <Link
+                        href={`/servicios#${s.servicioRapidoId}`}
+                        className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-medium transition-colors hover:gap-2.5"
+                        style={{ color: accent }}
+                      >
+                        Ver detalle y solicitar
+                        <span aria-hidden>→</span>
+                      </Link>
+                    )}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         );
       })}

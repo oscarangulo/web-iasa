@@ -3,6 +3,8 @@ export type DivisionSlug = 'proiecta' | 'proambiente' | 'proceanic' | 'ingenieri
 export type Servicio = {
   titulo: string;
   descripcion: string;
+  // ancla a un servicio detallado de respuesta rápida en /servicios#<id>
+  servicioRapidoId?: string;
 };
 
 export type Division = {
@@ -40,9 +42,34 @@ export const divisiones: Division[] = [
           'Diseño de Plantas de Tratamiento de Aguas Servidas y RILes, eficiencia de aguas, minimización de RILes y auditoría de procesos industriales.',
       },
       {
-        titulo: 'Hidráulica',
+        titulo: 'Hidrología e Inundabilidad',
         descripcion:
-          'Estudios hidrológicos, inundabilidad y recursos hídricos. Diseño de obras hidráulicas y modelación matemática de cauces y canales.',
+          'Estudios hidrológicos y de inundabilidad: identificación de cauces y zonas inundables, acotación de áreas de restricción y recuperación de superficie útil. Diseño de obras hidráulicas y modelación matemática de cauces y canales (PAS 155, 156, 157). Respaldo técnico para tramitación ante SEA, DGA y DOM.',
+        servicioRapidoId: 'hidrologia-inundabilidad',
+      },
+      {
+        titulo: 'Estabilidad de Taludes y Deformaciones',
+        descripcion:
+          'Estudio geotécnico que previene deslizamientos, fallas y asentamientos: cálculo del factor de seguridad estático y sísmico, análisis de deformaciones del suelo de fundación y de los sistemas de impermeabilización. Define la altura máxima segura de los depósitos y habilita ampliaciones en altura (PAS 140 y 141).',
+        servicioRapidoId: 'estabilidad-taludes',
+      },
+      {
+        titulo: 'Validación Técnica Topográfica',
+        descripcion:
+          'Base topográfica y geoespacial de alta precisión capturada con GNSS y escáner 3D / LiDAR: nube de puntos, Modelo Digital de Terreno (MDT) y planos validados conforme a normativa, listos para diseñar, cubicar y tramitar permisos.',
+        servicioRapidoId: 'validacion-topografica',
+      },
+      {
+        titulo: 'Expediente de Bodegas RESPEL',
+        descripcion:
+          'Diagnóstico ágil y gestión del expediente técnico para el almacenamiento de residuos peligrosos (RESPEL), con proyecto y autorización de funcionamiento ante la SEREMI de Salud bajo D.S. 148 y D.S. 43 (PAS 142).',
+        servicioRapidoId: 'expediente-respel',
+      },
+      {
+        titulo: 'Informe Hidrogeológico OPM',
+        descripcion:
+          'Informe con metodología SERNAGEOMIN que habilita la construcción en zonas con riesgo de afloramiento de napas, con apoyo en su tramitación municipal (plataforma ATG) para la obtención del permiso de edificación ante la DOM.',
+        servicioRapidoId: 'hidrogeologico-opm',
       },
       {
         titulo: 'Manejo de Residuos Sólidos',
@@ -80,9 +107,10 @@ export const divisiones: Division[] = [
     logo: '/divisions/proambiente.webp',
     servicios: [
       {
-        titulo: 'Auditorías y Diagnósticos de Gestión Ambiental',
+        titulo: 'Auditorías de Cumplimiento y Seguimiento Ambiental',
         descripcion:
-          'Auditorías Ambientales Independientes (AAI), auditorías de permisos y cumplimiento (due diligence), asesoría en legislación ambiental y diagnósticos del manejo de RSD, RISNP, RESPEL e inertes.',
+          'Auditorías Ambientales Independientes (AAI), auditorías de permisos y cumplimiento (due diligence), asesoría en legislación ambiental y diagnósticos del manejo de RSD, RISNP, RESPEL e inertes. Seguimiento de los compromisos ambientales adquiridos en la RCA y detección de brechas normativas.',
+        servicioRapidoId: 'auditorias-seguimiento',
       },
       {
         titulo: 'Gestión de Residuos y Pasivos Ambientales',
@@ -95,9 +123,10 @@ export const divisiones: Division[] = [
           'PAS 140 y 141 (centros de manejo), PAS 142 (residuos peligrosos), PAS 155/156/157 (obras hidráulicas DGA/DOH) y PAS 160 (Informe Favorable de Construcción).',
       },
       {
-        titulo: 'Saneamiento de Suelos Contaminados',
+        titulo: 'Estudios y Saneamiento de Suelos Contaminados',
         descripcion:
-          'Investigación y supervisión de remoción y bio-remediación. Fases I, II y III. Clientes históricos: Barrick (El Indio, El Tambo), KDM (Maricunga), Aguas Andinas (PTAS Talagante), CMPC.',
+          'Evaluación integral del sitio para confirmar o descartar contaminación: investigación de sitios con potencial presencia de contaminantes (SPPC), Fases I, II y III, comparación con valores de referencia y supervisión de remoción y bio-remediación. Clientes históricos: Barrick (El Indio, El Tambo), KDM (Maricunga), Aguas Andinas (PTAS Talagante), CMPC.',
+        servicioRapidoId: 'contaminacion-suelos',
       },
       {
         titulo: 'Eficiencia Energética',

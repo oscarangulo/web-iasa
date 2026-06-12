@@ -26,7 +26,7 @@ export function CalidadRespalda() {
             </h2>
             <div className="mt-8 flex items-baseline gap-3">
               <span className="text-[64px] font-semibold leading-none tracking-tighter2 tabular-nums md:text-[80px]">
-                29
+                30
               </span>
               <span className="text-[20px] font-medium text-white/70">años</span>
             </div>

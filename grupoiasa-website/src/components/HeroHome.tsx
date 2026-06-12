@@ -25,7 +25,7 @@ export function HeroHome() {
         >
           <span className="h-px w-10 bg-white/40" />
           <span className="text-[11px] uppercase tracking-eyebrow text-white/70">
-            Grupo IASA · 29 años
+            Grupo IASA · 30 años
           </span>
         </motion.div>
 
