@@ -7,14 +7,14 @@ const certificados = [
     empresa: 'PROIECTA Ingeniería',
     aenor: 'ER-0538/2024 - 002/00',
     iqnet: 'ES-0538/2024 - 002/00',
-    direccion: 'Av. Providencia 2653, Of. 1308',
+    direccion: 'General Holley, Providencia',
     color: '#2C5FA1',
   },
   {
     empresa: 'PROAMBIENTE',
     aenor: 'ER-0538/2024 - 003/00',
     iqnet: 'ES-0538/2024 - 003/00',
-    direccion: 'Av. Providencia 2653, Of. 1308',
+    direccion: 'General Holley, Providencia',
     color: '#0F9649',
   },
 ];

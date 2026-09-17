@@ -41,7 +41,7 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="text-[11px] uppercase tracking-eyebrow text-white/55 mb-4">Contacto</div>
           <address className="not-italic text-[14px] leading-relaxed text-white/70">
-            Av. Providencia 2653<br />Of. 1308<br />Providencia, Santiago
+            General Holley<br />Providencia, Santiago
           </address>
         </div>
       </div>

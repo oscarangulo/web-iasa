@@ -143,7 +143,7 @@ export default function ContactoPage() {
           <div>
             <div className="eyebrow">Oficina</div>
             <address className="not-italic mt-3 text-[15px] leading-relaxed text-carbon">
-              Av. Providencia 2653, Of. 1308<br />
+              General Holley<br />
               Providencia, Santiago<br />
               Chile
             </address>
@@ -163,8 +163,8 @@ export default function ContactoPage() {
           </div>
           <div className="aspect-[4/3] bg-crema border border-gris-borde rounded-sm overflow-hidden">
             <iframe
-              title="Mapa Av. Providencia 2653"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-70.6135%2C-33.4275%2C-70.6075%2C-33.4225&amp;layer=mapnik&amp;marker=-33.425%2C-70.6105"
+              title="Mapa General Holley, Providencia"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-70.6070%2C-33.4217%2C-70.6010%2C-33.4167&amp;layer=mapnik&amp;marker=-33.4192%2C-70.6040"
               className="w-full h-full border-0"
               loading="lazy"
             />
