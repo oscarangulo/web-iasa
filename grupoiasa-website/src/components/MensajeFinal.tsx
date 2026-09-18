@@ -1,19 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { PlanoTexture } from '@/components/PlanoTexture';
 import { motion } from 'framer-motion';
 
 export function MensajeFinal() {
   return (
     <section className="relative isolate overflow-hidden bg-[#0B1E36] text-white">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.08]"
-        style={{
-          backgroundImage:
-            'radial-gradient(circle at 30% 25%, rgba(242,200,17,0.5) 0, transparent 55%), radial-gradient(circle at 70% 80%, rgba(44,95,161,0.5) 0, transparent 55%)',
-        }}
-      />
+      <PlanoTexture opacidad={0.07} />
       <div className="container-x py-24 md:py-32">
         <motion.div
           initial={{ opacity: 0, y: 18 }}

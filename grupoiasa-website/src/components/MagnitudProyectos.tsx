@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { DuotonoFiltro } from '@/components/DuotonoFiltro';
 
 const magnitudes = [
   {
@@ -59,6 +60,7 @@ const magnitudes = [
 export function MagnitudProyectos() {
   return (
     <section className="border-y border-gris-borde bg-crema">
+      <DuotonoFiltro />
       <div className="container-x py-24 md:py-36">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-3xl">
@@ -94,7 +96,9 @@ export function MagnitudProyectos() {
                 href={`/proyectos/${m.slug}`}
                 className="group flex h-full flex-col overflow-hidden rounded-lg border border-gris-borde bg-white transition-all hover:-translate-y-1 hover:border-transparent hover:shadow-[0_24px_50px_-24px_rgba(15,28,55,0.25)]"
               >
-                {/* Imagen del proyecto (plano / obra real) */}
+                {/* Las cuatro fuentes son dispares: un plano escaneado, dos
+                    renders y una foto de obra. El duotono petróleo las unifica
+                    en un solo material y las devuelve al lenguaje de lámina. */}
                 <div className="relative aspect-[3/2] overflow-hidden bg-iasa-petroleo">
                   <Image
                     src={m.img}
@@ -102,7 +106,17 @@ export function MagnitudProyectos() {
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                    style={{ filter: 'url(#duotono-iasa)' }}
                   />
+                  <span
+                    aria-hidden
+                    className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    style={{ background: `linear-gradient(to top, ${m.color}26, transparent 60%)` }}
+                  />
+                  {/* Rótulo de figura, como en una lámina */}
+                  <span className="absolute left-3 top-4 bg-iasa-petroleo/70 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.18em] text-white/85">
+                    Fig. {String(i + 1).padStart(2, '0')}
+                  </span>
                   <span className="absolute inset-x-0 top-0 h-1.5" style={{ background: m.color }} />
                 </div>
 

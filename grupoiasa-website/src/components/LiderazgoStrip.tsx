@@ -94,33 +94,33 @@ export function LiderazgoStrip() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.45, delay: i * 0.05 }}
-              className="flex flex-col items-center text-center"
+              className="group flex flex-col"
             >
-              <div className="relative">
-                <div
-                  className="h-24 w-24 md:h-28 md:w-28 rounded-full overflow-hidden bg-crema border border-gris-borde flex items-center justify-center"
-                >
-                  {l.foto ? (
-                    <Image
-                      src={l.foto}
-                      alt={l.nombre}
-                      width={120}
-                      height={120}
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <span className="text-[26px] font-medium tracking-tighter2 text-gris-medio">
-                      {iniciales(l.nombre)}
-                    </span>
-                  )}
-                </div>
+              {/* Retrato 3:4 sobre fondo de estudio, gris por defecto y a color
+                  en hover: el tratamiento uniforme que especifica DESIGN.md.
+                  El círculo recortaba la cara y leía como avatar de app. */}
+              <div className="relative aspect-[3/4] w-full overflow-hidden bg-carbon">
+                {l.foto ? (
+                  <Image
+                    src={l.foto}
+                    alt={l.nombre}
+                    width={240}
+                    height={320}
+                    sizes="(min-width: 1024px) 16vw, (min-width: 640px) 45vw, 90vw"
+                    className="h-full w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0"
+                  />
+                ) : (
+                  <span className="flex h-full w-full items-center justify-center text-[34px] font-medium tracking-tighter2 text-white/45">
+                    {iniciales(l.nombre)}
+                  </span>
+                )}
                 <span
-                  className="absolute -bottom-1 left-1/2 -translate-x-1/2 h-1 w-8 rounded-full"
+                  className="absolute inset-x-0 bottom-0 h-1"
                   style={{ background: l.accent }}
                 />
               </div>
-              <div className="mt-5 text-[14px] font-medium text-carbon">{l.nombre}</div>
-              <div className="text-[12px] text-gris-medio leading-snug mt-1 px-2">
+              <div className="mt-4 text-[14px] font-medium text-carbon">{l.nombre}</div>
+              <div className="text-[12px] text-gris-medio leading-snug mt-1">
                 {l.cargo}
               </div>
             </motion.li>

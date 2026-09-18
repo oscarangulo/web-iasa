@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { PlanoTexture } from '@/components/PlanoTexture';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -127,51 +128,7 @@ export function HeroHome() {
 function TechTexture() {
   return (
     <>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.07]"
-        style={{
-          backgroundImage:
-            'radial-gradient(circle at 20% 30%, rgba(255,255,255,0.6) 0, transparent 60%), radial-gradient(circle at 75% 70%, rgba(242,200,17,0.4) 0, transparent 55%)',
-        }}
-      />
-      <svg
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-[0.07] mix-blend-screen"
-        viewBox="0 0 1200 700"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        <defs>
-          <pattern id="topo" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M0 20 Q 10 10 20 20 T 40 20" fill="none" stroke="white" strokeWidth="0.5" />
-          </pattern>
-        </defs>
-        <rect width="1200" height="700" fill="url(#topo)" />
-        {[140, 200, 270, 350, 440, 540].map((r, i) => (
-          <circle
-            key={i}
-            cx="1050"
-            cy="120"
-            r={r}
-            fill="none"
-            stroke="white"
-            strokeWidth="0.6"
-            opacity={0.55 - i * 0.08}
-          />
-        ))}
-        {[80, 130, 190, 260, 340].map((r, i) => (
-          <circle
-            key={`b-${i}`}
-            cx="80"
-            cy="620"
-            r={r}
-            fill="none"
-            stroke="#F2C811"
-            strokeWidth="0.6"
-            opacity={0.45 - i * 0.07}
-          />
-        ))}
-      </svg>
+      <PlanoTexture opacidad={0.1} />
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"

@@ -2,29 +2,34 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { PlanoEcosistema } from '@/components/PlanoEcosistema';
 
 const divisiones = [
   {
     nombre: 'PROIECTA',
     color: '#2C5FA1',
+    ink: '#2C5FA1',
     descripcion:
       'Gestión de aguas, residuos sólidos, ingeniería civil, estructural, eléctrica, sanitaria, obras hidráulicas, project management y permisología.',
   },
   {
     nombre: 'PROAMBIENTE',
     color: '#0F9649',
+    ink: '#0B7A3B',
     descripcion:
       'Auditorías y planes de seguimiento ambiental, manejo de residuos, gestión de suelos contaminados, eficiencia energética y recursos naturales.',
   },
   {
     nombre: 'PROCEANIC',
     color: '#B6612A',
+    ink: '#9E5424',
     descripcion:
       'Ingeniería marítima, ciencias del mar y planes de vigilancia ambiental.',
   },
   {
     nombre: 'INGENIERÍA ALEMANA',
     color: '#F2C811',
+    ink: '#8A6B00',
     descripcion:
       'Soporte técnico especializado y vinculación con know-how europeo.',
   },
@@ -71,26 +76,45 @@ export function Ecosystem() {
           </p>
         </div>
 
-        {/* Cuatro franjas de color con descripción */}
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* El corte a sangre: las divisiones se reparten un mismo terreno, y
+            la leyenda de abajo lee sus llamadas. */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.7 }}
+          className="mt-16 -mx-6 md:-mx-10 lg:-mx-14"
+        >
+          <PlanoEcosistema />
+        </motion.div>
+
+        <dl className="mt-4 grid border-t border-gris-borde sm:grid-cols-2 lg:grid-cols-4">
           {divisiones.map((d, i) => (
             <motion.div
               key={d.nombre}
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
+              className="border-b border-gris-borde py-6 sm:pr-8 lg:border-l lg:first:border-l-0 lg:pl-6 lg:first:pl-0"
             >
-              <div className="text-[14px] font-semibold uppercase tracking-eyebrow text-carbon">
-                {d.nombre}
-              </div>
-              <div className="mt-3 h-1.5 w-full rounded-full" style={{ background: d.color }} />
-              <p className="mt-4 text-[13.5px] leading-relaxed text-gris-medio">
+              <dt className="flex items-baseline gap-2.5">
+                <span
+                  className="font-mono text-[11px] tracking-[0.12em]"
+                  style={{ color: d.ink }}
+                >
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span className="text-[14px] font-semibold uppercase tracking-eyebrow text-carbon">
+                  {d.nombre}
+                </span>
+              </dt>
+              <dd className="mt-3 text-[13.5px] leading-relaxed text-gris-medio">
                 {d.descripcion}
-              </p>
+              </dd>
             </motion.div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   );
