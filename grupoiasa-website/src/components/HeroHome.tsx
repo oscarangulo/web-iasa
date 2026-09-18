@@ -5,10 +5,10 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const stripes = [
-  { color: '#2C5FA1', nombre: 'PROIECTA', bajada: 'Ingeniería integral' },
-  { color: '#0F9649', nombre: 'PROAMBIENTE', bajada: 'Consultoría ambiental' },
-  { color: '#B6612A', nombre: 'PROCEANIC', bajada: 'Ingeniería marítima' },
-  { color: '#F2C811', nombre: 'INGENIERÍA ALEMANA', bajada: 'Know-how y soporte' },
+  { color: '#2C5FA1', onDark: '#7FA6DC', nombre: 'PROIECTA', bajada: 'Ingeniería integral' },
+  { color: '#0F9649', onDark: '#3FBF77', nombre: 'PROAMBIENTE', bajada: 'Consultoría ambiental' },
+  { color: '#B6612A', onDark: '#E08C4F', nombre: 'PROCEANIC', bajada: 'Ingeniería marítima' },
+  { color: '#F2C811', onDark: '#F2C811', nombre: 'INGENIERÍA ALEMANA', bajada: 'Know-how y soporte' },
 ];
 
 export function HeroHome() {
@@ -109,7 +109,7 @@ export function HeroHome() {
               <div>
                 <div
                   className="text-[12px] uppercase tracking-eyebrow font-semibold"
-                  style={{ color: s.color }}
+                  style={{ color: s.onDark }}
                 >
                   {s.nombre}
                 </div>

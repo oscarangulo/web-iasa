@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 const nav = [
@@ -19,6 +19,16 @@ const nav = [
 export function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+
+  // Escape cierra el menú móvil: sin esto el teclado queda atrapado en el panel.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-40 border-b border-gris-borde bg-white/85 backdrop-blur">
@@ -62,8 +72,10 @@ export function Header() {
         </nav>
 
         <button
-          aria-label="Abrir menú"
-          className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-gris-borde"
+          aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+          aria-expanded={open}
+          aria-controls="menu-movil"
+          className="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-md border border-gris-borde"
           onClick={() => setOpen((v) => !v)}
         >
           <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
@@ -73,7 +85,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-gris-borde bg-white">
+        <div id="menu-movil" className="lg:hidden border-t border-gris-borde bg-white">
           <div className="container-x py-4 flex flex-col">
             {nav.map((item) => (
               <Link

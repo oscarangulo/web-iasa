@@ -10,6 +10,7 @@ const magnitudes = [
     nombre: 'CIGRI',
     sub: 'Centro Integral de Residuos · Til-Til',
     color: '#2C5FA1',
+    ink: '#2C5FA1',
     img: '/projects/cigri-til-til.webp',
     cifras: [
       { v: '40', u: 'ha' },
@@ -22,6 +23,7 @@ const magnitudes = [
     nombre: 'Spence',
     sub: 'Caracterización y zero waste · BHP',
     color: '#0F9649',
+    ink: '#0B7A3B',
     img: '/projects/spence-sgo.webp',
     cifras: [
       { v: 'US$25,4M', u: 'inversión' },
@@ -33,6 +35,7 @@ const magnitudes = [
     nombre: 'Los Bronces',
     sub: 'Gestión integral de residuos · Anglo American',
     color: '#B6612A',
+    ink: '#9E5424',
     img: '/projects/los-bronces.webp',
     cifras: [
       { v: 'US$10M', u: 'inversión' },
@@ -44,6 +47,7 @@ const magnitudes = [
     nombre: 'Antucoya',
     sub: 'Centro de manejo de residuos · AMSA',
     color: '#F2C811',
+    ink: '#8A6B00',
     img: '/projects/antucoya.webp',
     cifras: [
       { v: '278.000', u: 'm³' },
@@ -117,7 +121,7 @@ export function MagnitudProyectos() {
                       <div key={c.v} className="flex items-baseline justify-between gap-3 py-3">
                         <dt
                           className="text-[26px] font-medium leading-none tracking-tighter2 tabular-nums"
-                          style={{ color: m.color }}
+                          style={{ color: m.ink }}
                         >
                           {c.v}
                         </dt>
@@ -130,7 +134,7 @@ export function MagnitudProyectos() {
 
                   <div
                     className="mt-auto flex items-center gap-2 pt-6 text-[12.5px] font-medium"
-                    style={{ color: m.color }}
+                    style={{ color: m.ink }}
                   >
                     Ver ficha
                     <span className="transition-transform group-hover:translate-x-1" aria-hidden>→</span>

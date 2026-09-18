@@ -21,7 +21,7 @@ export default function ProyectosPage() {
       <Hero
         eyebrow="Portafolio"
         titulo={<>Proyectos donde la <em className="not-italic text-iasa-azul">ingeniería integral</em> hace la diferencia.</>}
-        bajada="Una selección de trabajos representativos en minería, sanitario, energético y portuario. Filtrá por empresa del grupo para ver el detalle de cada disciplina."
+        bajada="Una selección de trabajos representativos en minería, sanitario, energético y portuario. Filtre por empresa del grupo para ver el detalle de cada disciplina."
       />
 
       <section className="container-x py-16 md:py-20">
@@ -42,9 +42,11 @@ export default function ProyectosPage() {
               onClick={() => setFilter(d.slug)}
               className="rounded-full border px-4 py-2 text-[13px] font-medium transition-colors"
               style={{
-                background: filter === d.slug ? d.colorHex : 'transparent',
-                color: filter === d.slug ? '#fff' : d.colorHex,
-                borderColor: filter === d.slug ? d.colorHex : `${d.colorHex}55`,
+                // El filtro es texto sobre blanco (o blanco sobre el color), así
+                // que usa la variante AA; el borde sí lleva el color de marca.
+                background: filter === d.slug ? d.inkHex : 'transparent',
+                color: filter === d.slug ? '#fff' : d.inkHex,
+                borderColor: filter === d.slug ? d.inkHex : `${d.colorHex}55`,
               }}
             >
               {d.nombre}

@@ -12,10 +12,12 @@ export type Division = {
   nombre: string;
   bajada: string;
   descripcion: string;
+  /** Color de marca. Para superficies: barras, fondos, bordes. */
   colorHex: string;
+  /** Mismo matiz oscurecido a contraste AA. Para la división escrita sobre fondo claro. */
+  inkHex: string;
   colorClass: string;
   borderClass: string;
-  textClass: string;
   bgSoftClass: string;
   logo: string;
   servicios: Servicio[];
@@ -30,9 +32,9 @@ export const divisiones: Division[] = [
     descripcion:
       'Ingeniería civil, estructural, eléctrica y sanitaria. Gestión de aguas y diseño de centros de manejo de residuos sólidos. Project Management y permisología sectorial.',
     colorHex: '#2C5FA1',
+    inkHex: '#2C5FA1',
     colorClass: 'bg-iasa-azul',
     borderClass: 'border-iasa-azul',
-    textClass: 'text-iasa-azul',
     bgSoftClass: 'bg-iasa-azul/5',
     logo: '/divisions/proiecta.webp',
     servicios: [
@@ -100,9 +102,9 @@ export const divisiones: Division[] = [
     descripcion:
       'Auditorías y planes de seguimiento ambiental, manejo de residuos, gestión de suelos contaminados, eficiencia energética y permisos ambientales mixtos.',
     colorHex: '#0F9649',
+    inkHex: '#0B7A3B',
     colorClass: 'bg-iasa-verde',
     borderClass: 'border-iasa-verde',
-    textClass: 'text-iasa-verde',
     bgSoftClass: 'bg-iasa-verde/5',
     logo: '/divisions/proambiente.webp',
     servicios: [
@@ -147,9 +149,9 @@ export const divisiones: Division[] = [
     descripcion:
       'Ingeniería marítima, ciencias del mar y planes de vigilancia ambiental para infraestructura costera, emisarios submarinos y proyectos portuarios.',
     colorHex: '#B6612A',
+    inkHex: '#9E5424',
     colorClass: 'bg-iasa-naranja',
     borderClass: 'border-iasa-naranja',
-    textClass: 'text-iasa-naranja',
     bgSoftClass: 'bg-iasa-naranja/5',
     logo: '/divisions/proceanic.webp',
     servicios: [
@@ -197,9 +199,9 @@ export const divisiones: Division[] = [
     descripcion:
       'Estela de prestigio profesional, metodología europea y respaldo técnico para proyectos complejos. Experiencia transversal en ingeniería, sostenibilidad y gestión de operaciones industriales.',
     colorHex: '#F2C811',
+    inkHex: '#8A6B00',
     colorClass: 'bg-iasa-amarillo',
     borderClass: 'border-iasa-amarillo',
-    textClass: 'text-iasa-amarillo',
     bgSoftClass: 'bg-iasa-amarillo/5',
     logo: '/divisions/ingenieria-alemana.webp',
     servicios: [

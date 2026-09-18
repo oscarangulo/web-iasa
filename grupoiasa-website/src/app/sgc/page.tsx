@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
 import { Hero } from '@/components/Hero';
 import { SectionTitle } from '@/components/SectionTitle';
 import { CtaBlock } from '@/components/CtaBlock';
+
+export const metadata: Metadata = {
+  title: 'Sistema de Gestión de Calidad · ISO 9001:2015',
+  description:
+    'Certificación ISO 9001:2015 AENOR e IQNet para PROIECTA y PROAMBIENTE. Política de calidad, alcance certificado y organismos acreditadores del Grupo IASA.',
+  alternates: { canonical: '/sgc' },
+};
 
 const certificados = [
   {
@@ -64,7 +72,7 @@ export default function SgcPage() {
                 </div>
                 <div className="grid grid-cols-[120px_1fr]">
                   <dt className="text-gris-medio">Vigencia</dt>
-                  <dd className="text-iasa-verde font-medium">Hasta 2027-11-28</dd>
+                  <dd className="text-iasa-verde-ink font-medium">Hasta 2027-11-28</dd>
                 </div>
               </dl>
             </div>

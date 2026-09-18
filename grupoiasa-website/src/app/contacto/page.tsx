@@ -52,7 +52,7 @@ export default function ContactoPage() {
               aria-live="polite"
               className="border border-iasa-verde/30 bg-iasa-verde/5 p-10 rounded-sm"
             >
-              <div className="text-[12px] uppercase tracking-eyebrow text-iasa-verde">Mensaje recibido</div>
+              <div className="text-[12px] uppercase tracking-eyebrow text-iasa-verde-ink">Mensaje recibido</div>
               <h3 className="h-section mt-3">Gracias por su mensaje.</h3>
               <p className="body-lg mt-3">
                 Confirmamos recepción. Carolina y el equipo le responderán en las próximas 48 horas hábiles.
@@ -79,10 +79,11 @@ export default function ContactoPage() {
               </div>
 
               <div>
-                <label className="block text-[12px] uppercase tracking-eyebrow text-gris-medio mb-2">
+                <label htmlFor="f-division" className="block text-[12px] uppercase tracking-eyebrow text-gris-medio mb-2">
                   División de interés
                 </label>
                 <select
+                  id="f-division"
                   name="division"
                   className="w-full border border-gris-borde bg-white rounded-sm px-4 py-3 text-[15px] focus:border-iasa-azul focus:outline-none focus:ring-1 focus:ring-iasa-azul"
                   defaultValue=""
@@ -96,10 +97,12 @@ export default function ContactoPage() {
               </div>
 
               <div>
-                <label className="block text-[12px] uppercase tracking-eyebrow text-gris-medio mb-2">
-                  Mensaje <span className="text-iasa-naranja">*</span>
+                <label htmlFor="f-mensaje" className="block text-[12px] uppercase tracking-eyebrow text-gris-medio mb-2">
+                  Mensaje <span className="text-iasa-naranja-ink" aria-hidden>*</span>
+                  <span className="sr-only">(obligatorio)</span>
                 </label>
                 <textarea
+                  id="f-mensaje"
                   name="mensaje"
                   required
                   rows={5}
@@ -109,7 +112,12 @@ export default function ContactoPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <input id="acepto" type="checkbox" required className="mt-1 accent-iasa-azul" />
+                <input
+                  id="acepto"
+                  type="checkbox"
+                  required
+                  className="mt-0.5 h-6 w-6 shrink-0 cursor-pointer accent-iasa-azul"
+                />
                 <label htmlFor="acepto" className="text-[13px] text-gris-medio leading-relaxed">
                   Acepto el tratamiento de mis datos personales para fines de contacto comercial conforme a la legislación chilena vigente.
                 </label>
@@ -180,10 +188,12 @@ function Field({
 }: { label: string; name: string; type?: string; required?: boolean }) {
   return (
     <div>
-      <label className="block text-[12px] uppercase tracking-eyebrow text-gris-medio mb-2">
-        {label} {required && <span className="text-iasa-naranja">*</span>}
+      <label htmlFor={`f-${name}`} className="block text-[12px] uppercase tracking-eyebrow text-gris-medio mb-2">
+        {label} {required && <span className="text-iasa-naranja-ink" aria-hidden>*</span>}
+        {required && <span className="sr-only">(obligatorio)</span>}
       </label>
       <input
+        id={`f-${name}`}
         type={type}
         name={name}
         required={required}

@@ -3,11 +3,13 @@
 import { motion } from 'framer-motion';
 import { serviciosRapidos, type EmpresaServicio } from '@/data/servicios';
 
+// Variantes AA de la paleta corporativa: este mapa se usa como color de texto
+// sobre fondo claro, donde los hex de marca no alcanzan 4.5:1.
 const empresaColor: Record<EmpresaServicio, string> = {
   PROIECTA: '#2C5FA1',
-  PROAMBIENTE: '#0F9649',
-  PROCEANIC: '#B6612A',
-  'Ingeniería Alemana': '#B68A1F',
+  PROAMBIENTE: '#0B7A3B',
+  PROCEANIC: '#9E5424',
+  'Ingeniería Alemana': '#8A6B00',
 };
 
 export function ServiciosRapidos() {
@@ -16,7 +18,7 @@ export function ServiciosRapidos() {
       <div className="container-x py-20 md:py-28">
         <div className="flex items-center gap-3">
           <span className="h-px w-8 bg-iasa-amarillo" />
-          <span className="text-[11px] font-semibold uppercase tracking-eyebrow text-iasa-amarillo">
+          <span className="text-[11px] font-semibold uppercase tracking-eyebrow text-iasa-amarillo-ink">
             Respuesta rápida
           </span>
         </div>
@@ -87,7 +89,7 @@ export function ServiciosRapidos() {
                 <div className="md:col-span-8 md:border-l md:border-gris-borde md:pl-10">
                   <div className="space-y-6">
                     <div>
-                      <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/55">
+                      <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/70">
                         Objetivo
                       </h4>
                       <p className="mt-2 text-[14px] leading-relaxed text-gris-medio text-pretty">
@@ -97,7 +99,7 @@ export function ServiciosRapidos() {
 
                     {s.cumplimiento && (
                       <div>
-                        <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/55">
+                        <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/70">
                           Cumplimiento normativo
                         </h4>
                         <p className="mt-2 text-[14px] leading-relaxed text-gris-medio text-pretty">
@@ -108,7 +110,7 @@ export function ServiciosRapidos() {
 
                     {s.detalle && (
                       <div>
-                        <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/55">
+                        <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/70">
                           {s.detalleTitulo ?? 'Qué incluye'}
                         </h4>
                         <ul className="mt-3 space-y-2">
@@ -130,7 +132,7 @@ export function ServiciosRapidos() {
 
                     {s.valor && (
                       <div>
-                        <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/55">
+                        <h4 className="text-[11px] font-semibold uppercase tracking-eyebrow text-carbon/70">
                           Valor para su proyecto
                         </h4>
                         <ul className="mt-3 space-y-2">

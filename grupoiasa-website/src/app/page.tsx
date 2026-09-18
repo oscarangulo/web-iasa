@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { HeroHome } from '@/components/HeroHome';
 import { Ecosystem } from '@/components/Ecosystem';
 import { PurposeBlock } from '@/components/PurposeBlock';
@@ -9,6 +10,10 @@ import { CalidadRespalda } from '@/components/CalidadRespalda';
 import { LiderazgoStrip } from '@/components/LiderazgoStrip';
 import { ClientStrip } from '@/components/ClientStrip';
 import { MensajeFinal } from '@/components/MensajeFinal';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 export default function HomePage() {
   return (

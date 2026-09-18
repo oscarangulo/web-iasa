@@ -13,6 +13,13 @@ const config: Config = {
           naranja: '#B6612A',
           amarillo: '#F2C811',
           gris: '#838488',
+          // Variantes "ink": mismo matiz corporativo, oscurecido hasta pasar
+          // WCAG AA (>=4.5:1) como TEXTO sobre blanco y crema. Los hex de arriba
+          // se reservan para superficies (barras, fondos, bordes), donde el
+          // contraste del texto lo aporta el fondo, no el color de marca.
+          'verde-ink': '#0B7A3B',
+          'naranja-ink': '#9E5424',
+          'amarillo-ink': '#8A6B00',
         },
         carbon: '#0A0A0A',
         crema: '#FAFAF8',

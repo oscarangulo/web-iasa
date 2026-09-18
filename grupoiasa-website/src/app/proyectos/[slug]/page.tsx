@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Hero } from '@/components/Hero';
@@ -7,6 +8,24 @@ import { getDivision } from '@/data/divisiones';
 
 export function generateStaticParams() {
   return proyectos.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const p = proyectos.find((x) => x.slug === slug);
+  if (!p) return {};
+  const div = getDivision(p.division);
+
+  return {
+    title: `${p.nombre} · ${div.nombre}`,
+    description: p.resumen,
+    alternates: { canonical: `/proyectos/${p.slug}` },
+    openGraph: {
+      title: `${p.nombre} · Grupo IASA`,
+      description: p.resumen,
+      type: 'article',
+    },
+  };
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
@@ -22,11 +41,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         titulo={<>{p.nombre}</>}
         bajada={p.resumen}
         accent={div.colorHex}
+        ink={div.inkHex}
       />
 
       <section className="container-x py-20 grid md:grid-cols-12 gap-12">
         <div className="md:col-span-8">
-          <div className="eyebrow" style={{ color: div.colorHex }}>Alcance del proyecto</div>
+          <div className="eyebrow" style={{ color: div.inkHex }}>Alcance del proyecto</div>
           <ul className="mt-6 space-y-5">
             {p.detalle.map((d, i) => (
               <li key={i} className="grid grid-cols-[24px_1fr] gap-3">

@@ -12,7 +12,7 @@ export function ProyectoCard({ proyecto }: { proyecto: Proyecto }) {
       <div className="h-1 w-full" style={{ background: div.colorHex }} />
       <div className="p-6 md:p-7 flex-1 flex flex-col">
         <div className="flex items-center justify-between text-[11px] uppercase tracking-eyebrow">
-          <span style={{ color: div.colorHex }}>{div.nombre}</span>
+          <span style={{ color: div.inkHex }}>{div.nombre}</span>
           <span className="text-gris-medio">{proyecto.ano}</span>
         </div>
         <h3 className="mt-4 text-[18px] font-medium tracking-tightish leading-snug text-carbon">

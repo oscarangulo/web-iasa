@@ -8,6 +8,12 @@ colors:
   verde: "#0F9649"
   naranja: "#B6612A"
   amarillo: "#F2C811"
+  verde-ink: "#0B7A3B"
+  naranja-ink: "#9E5424"
+  amarillo-ink: "#8A6B00"
+  azul-on-dark: "#7FA6DC"
+  verde-on-dark: "#3FBF77"
+  naranja-on-dark: "#E08C4F"
   carbon: "#0A0A0A"
   crema: "#FAFAF8"
   gris-medio: "#5C6470"
@@ -108,6 +114,16 @@ El cuerpo de los párrafos largos va **justificado** (alineación a ambos márge
 **Lift sutil en interactivos.** El sistema es plano por defecto: la jerarquía nace de bordes hairline (`#E5E5E5`), tintes de fondo y superposición tonal (crema sobre blanco sobre petróleo). No hay sombras ambientales decorativas.
 
 La excepción son los elementos accionables: las tarjetas de proyecto se elevan al hover con una sombra difusa y direccional (`0 24px 50px -24px rgba(15,28,55,0.25)`) y un `translateY(-4px)`, invitando a la interacción. El núcleo del ecosistema usa una sombra profunda (`0 25px 60px -15px rgba(11,30,54,0.55)`) para flotar sobre los anillos. Las sombras son estructurales (comunican interactividad / profundidad de capa), nunca ornamentales.
+
+## Color y contraste
+
+Cada división tiene tres registros del mismo matiz, y el fondo decide cuál se usa:
+
+- **Color de marca** (`azul`, `verde`, `naranja`, `amarillo`): superficies. Barras superiores de card, franjas, fondos, bordes, puntos. Nunca texto sobre fondo claro, salvo el azul.
+- **`-ink`**: el matiz oscurecido hasta pasar 4.5:1 sobre blanco y crema. Es la división **escrita** sobre fondo claro: eyebrows, nombres, enlaces, cifras, filtros. El azul no necesita variante (6.4:1 de origen).
+- **`-on-dark`**: el matiz aclarado para escribir sobre petróleo. El amarillo no la necesita (10.4:1 sobre petróleo).
+
+El amarillo es el caso extremo: 1.6:1 contra blanco. Como fondo de botón exige texto petróleo; como texto exige `amarillo-ink`. El CTA del hero resuelve fondo y texto por cálculo de contraste, así que una división nueva hereda el comportamiento sin tocar el componente.
 
 ## Components
 

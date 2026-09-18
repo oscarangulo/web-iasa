@@ -15,7 +15,7 @@ export function DivisionCard({ division }: { division: Division }) {
           </div>
           <span
             className="text-[10px] uppercase tracking-eyebrow font-semibold px-2.5 py-1 rounded-full"
-            style={{ background: `${division.colorHex}12`, color: division.colorHex }}
+            style={{ background: `${division.colorHex}14`, color: division.inkHex }}
           >
             {division.slug.toUpperCase()}
           </span>
@@ -28,7 +28,7 @@ export function DivisionCard({ division }: { division: Division }) {
 
         <p className="body mt-5 line-clamp-4">{division.descripcion}</p>
 
-        <div className="mt-auto pt-8 flex items-center gap-2 text-[13px] font-medium" style={{ color: division.colorHex }}>
+        <div className="mt-auto pt-8 flex items-center gap-2 text-[13px] font-medium" style={{ color: division.inkHex }}>
           Ver división
           <span className="transition-transform group-hover:translate-x-1" aria-hidden>→</span>
         </div>

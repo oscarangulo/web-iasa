@@ -13,11 +13,11 @@ export function DivisionPage({ division }: { division: Division }) {
   return (
     <>
       <Hero
-        eyebrow={`Empresa del Grupo IASA · ${division.slug.toUpperCase()}`}
+        eyebrow={`Empresa del Grupo IASA · ${division.nombre}`}
         titulo={
           <>
             {division.nombre}
-            <span className="block text-[28px] md:text-[34px] font-medium tracking-tightish mt-3" style={{ color: division.colorHex }}>
+            <span className="block text-[28px] md:text-[34px] font-medium tracking-tightish mt-3" style={{ color: division.inkHex }}>
               {division.bajada}
             </span>
           </>
@@ -26,6 +26,7 @@ export function DivisionPage({ division }: { division: Division }) {
         ctaPrimario={{ href: '/contacto', label: 'Solicitar cotización' }}
         ctaSecundario={{ href: '/proyectos', label: 'Ver proyectos' }}
         accent={division.colorHex}
+        ink={division.inkHex}
       />
 
       <section className="container-x py-20 md:py-28">
@@ -33,10 +34,10 @@ export function DivisionPage({ division }: { division: Division }) {
           eyebrow="Líneas de servicio"
           titulo="Capacidades técnicas de la división."
           bajada="Desplegamos cada línea con su detalle. Cada servicio incluye factibilidad, ingeniería, permisos y operación según corresponda."
-          accent={division.colorHex}
+          accent={division.inkHex}
         />
         <div className="mt-12 max-w-5xl">
-          <ServiciosLista servicios={division.servicios} accent={division.colorHex} />
+          <ServiciosLista servicios={division.servicios} accent={division.inkHex} />
         </div>
       </section>
 
@@ -46,7 +47,7 @@ export function DivisionPage({ division }: { division: Division }) {
             <SectionTitle
               eyebrow="Proyectos representativos"
               titulo={`Casos donde ${division.nombre} entregó valor técnico.`}
-              accent={division.colorHex}
+              accent={division.inkHex}
             />
             <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {proyectosDiv.map((p) => (
@@ -62,7 +63,7 @@ export function DivisionPage({ division }: { division: Division }) {
           <SectionTitle
             eyebrow={`Por qué ${division.nombre}`}
             titulo="Razones técnicas, no marketing."
-            accent={division.colorHex}
+            accent={division.inkHex}
           />
         </div>
         <div className="md:col-span-7">
@@ -71,7 +72,7 @@ export function DivisionPage({ division }: { division: Division }) {
               <li key={i} className="grid grid-cols-[40px_1fr] gap-4 border-b border-gris-borde pb-6 last:border-b-0">
                 <div
                   className="text-[12px] tabular-nums font-semibold mt-1"
-                  style={{ color: division.colorHex }}
+                  style={{ color: division.inkHex }}
                 >
                   {String(i + 1).padStart(2, '0')}
                 </div>

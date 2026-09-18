@@ -1,8 +1,16 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Hero } from '@/components/Hero';
 import { SectionTitle } from '@/components/SectionTitle';
 import { CtaBlock } from '@/components/CtaBlock';
 import { equipo, plataformas } from '@/data/equipo';
+
+export const metadata: Metadata = {
+  title: 'Nosotros · 30 años de ingeniería, ambiente y mar',
+  description:
+    'Grupo IASA reúne cuatro especialidades bajo un mismo equipo senior: PROIECTA, PROAMBIENTE, PROCEANIC e Ingeniería Alemana. Trayectoria, equipo y certificación ISO 9001:2015.',
+  alternates: { canonical: '/nosotros' },
+};
 
 const hitos = [
   { ano: '1997', texto: 'Fundación del Grupo IASA en Santiago de Chile.' },
@@ -34,7 +42,7 @@ export default function NosotrosPage() {
           </p>
         </div>
         <div className="lg:col-span-5 lg:col-start-8">
-          <SectionTitle eyebrow="Visión" titulo="La consultora referente para la producción sustentable en Chile." accent="#0F9649" />
+          <SectionTitle eyebrow="Visión" titulo="La consultora referente para la producción sustentable en Chile." accent="#0B7A3B" />
           <p className="body-lg mt-6">
             Ser la consultora chilena que la industria minera, sanitaria, energética y portuaria
             llama primero cuando un proyecto exige ingeniería y consultoría ambiental integradas
