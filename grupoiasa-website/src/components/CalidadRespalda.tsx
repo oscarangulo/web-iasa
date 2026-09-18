@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export function CalidadRespalda() {
   return (
     <section className="bg-iasa-petroleo text-white">
-      <div className="container-x py-20 md:py-28">
+      <div className="container-x py-16 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}

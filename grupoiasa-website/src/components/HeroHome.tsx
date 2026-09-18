@@ -40,6 +40,7 @@ export function HeroHome() {
             alt="Grupo IASA"
             width={281}
             height={273}
+            sizes="(min-width: 768px) 115px, 99px"
             priority
             className="h-24 w-auto md:h-28"
           />

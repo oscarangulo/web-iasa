@@ -57,7 +57,7 @@ export function VisionEstrategica() {
               <h3 className="mt-4 text-[18px] font-medium leading-snug tracking-tightish text-carbon">
                 {p.titulo}
               </h3>
-              <p className="mt-3 text-justify text-[14px] leading-relaxed text-gris-medio">
+              <p className="mt-3 text-[14px] leading-relaxed text-gris-medio">
                 {p.texto}
               </p>
             </motion.div>

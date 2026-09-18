@@ -61,7 +61,7 @@ function iniciales(n: string) {
 export function LiderazgoStrip() {
   return (
     <section className="bg-white border-b border-gris-borde">
-      <div className="container-x py-20 md:py-28">
+      <div className="container-x py-16 md:py-24">
         <div className="grid gap-10 md:grid-cols-12 items-end">
           <div className="md:col-span-7">
             <div className="flex items-center gap-3">

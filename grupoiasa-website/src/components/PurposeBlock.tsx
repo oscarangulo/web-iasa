@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export function PurposeBlock() {
   return (
     <section className="border-b border-gris-borde bg-crema">
-      <div className="container-x grid items-center gap-12 py-20 md:grid-cols-12 md:py-28">
+      <div className="container-x grid items-center gap-12 py-24 md:grid-cols-12 md:py-32">
         {/* Texto principal */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -23,7 +23,7 @@ export function PurposeBlock() {
           <h2 className="mt-6 max-w-xl font-display text-[30px] font-semibold leading-[1.12] tracking-tighter2 text-carbon md:text-[40px]">
             Los proyectos complejos rara vez fallan por una sola razón.
           </h2>
-          <div className="mt-7 max-w-xl space-y-5 text-justify text-[15px] leading-relaxed text-gris-medio md:text-[16px]">
+          <div className="mt-7 max-w-xl space-y-5 text-justify hyphens-auto text-[15px] leading-relaxed text-gris-medio md:text-[16px]">
             <p>
               Fallan cuando ingeniería, medio ambiente, permisos y operación
               trabajan por separado. Grupo IASA nació para integrar esas
@@ -50,11 +50,11 @@ export function PurposeBlock() {
             <div className="h-1.5 w-full bg-iasa-naranja" />
             <div className="p-8 md:p-9">
               <h3 className="text-[19px] font-semibold text-white">Nuestro compromiso</h3>
-              <p className="mt-4 text-justify text-[14px] leading-relaxed text-white/75">
+              <p className="mt-4 text-[14px] leading-relaxed text-white/75">
                 Convertir desafíos técnicos, ambientales y regulatorios en
                 proyectos viables, ejecutables y sostenibles.
               </p>
-              <p className="mt-4 text-justify text-[14px] leading-relaxed text-white/75">
+              <p className="mt-4 text-[14px] leading-relaxed text-white/75">
                 Acompañamos cada decisión con criterio técnico, desde la
                 planificación hasta el cierre y el legado del proyecto.
               </p>

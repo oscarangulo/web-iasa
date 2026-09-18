@@ -59,7 +59,7 @@ const magnitudes = [
 export function MagnitudProyectos() {
   return (
     <section className="border-y border-gris-borde bg-crema">
-      <div className="container-x py-20 md:py-28">
+      <div className="container-x py-24 md:py-36">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3">

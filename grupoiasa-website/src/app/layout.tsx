@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
 import { Inter, Archivo } from 'next/font/google';
+import { MotionProvider } from '@/components/MotionProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -81,9 +82,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Saltar al contenido
         </a>
-        <Header />
-        <main id="contenido">{children}</main>
-        <Footer />
+        {/* Los reveals de framer-motion parten en opacity:0 y se revelan por JS.
+            Sin JS la página quedaría vacía; esto la deja legible igual. */}
+        <noscript>
+          <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+        <MotionProvider>
+          <Header />
+          <main id="contenido">{children}</main>
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   );

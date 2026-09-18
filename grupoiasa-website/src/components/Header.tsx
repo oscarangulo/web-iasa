@@ -40,6 +40,7 @@ export function Header() {
             width={281}
             height={273}
             priority
+            sizes="(min-width: 768px) 58px, 50px"
             className="h-12 w-auto md:h-14"
           />
           <div className="hidden sm:block leading-none pl-3 border-l border-gris-borde">

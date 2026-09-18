@@ -1,7 +1,7 @@
 export const clientes: string[] = [
   'Anglo American',
   'BHP',
-  'wood',
+  'Wood',
   'Antofagasta Minerals',
   'CICLO',
   'CMPC',
@@ -14,7 +14,7 @@ export const clientes: string[] = [
 ];
 
 export const kpis = [
-  { numero: '29', sufijo: '+', label: 'años de experiencia' },
+  { numero: '30', sufijo: '+', label: 'años de experiencia' },
   { numero: '35', sufijo: '', label: 'RCA aprobadas' },
   { numero: '24', sufijo: '', label: 'depósitos construidos' },
   { numero: '16', sufijo: '', label: 'centros mineros' },

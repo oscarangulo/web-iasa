@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container-x py-16 grid gap-10 md:grid-cols-12">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3">
-            <Image src="/logo-iasa-white.png" alt="Grupo IASA" width={281} height={273} className="h-16 w-auto" />
+            <Image src="/logo-iasa-white.png" alt="Grupo IASA" width={281} height={273} sizes="66px" className="h-16 w-auto" />
           </div>
           <div className="mt-5 text-[10px] uppercase tracking-eyebrow text-white/50">
             Cuatro especialidades. Un equipo. Un mismo método.
@@ -43,6 +43,12 @@ export function Footer() {
           <address className="not-italic text-[14px] leading-relaxed text-white/70">
             General Holley<br />Providencia, Santiago
           </address>
+          <a
+            href="mailto:contacto@grupoiasa.cl"
+            className="mt-3 inline-block text-[14px] text-white underline decoration-white/30 underline-offset-4 transition-colors hover:decoration-white"
+          >
+            contacto@grupoiasa.cl
+          </a>
         </div>
       </div>
 

@@ -59,7 +59,7 @@ export function Ecosystem() {
               className="h-40 w-auto md:h-48"
             />
           </motion.div>
-          <p className="text-justify text-[16px] leading-relaxed text-gris-medio md:col-span-8 md:text-[17px]">
+          <p className="text-justify hyphens-auto text-[16px] leading-relaxed text-gris-medio md:col-span-8 md:text-[17px]">
             IASA reúne a{' '}
             <strong className="font-semibold text-carbon">PROIECTA S.A.</strong>,{' '}
             <strong className="font-semibold text-carbon">PROAMBIENTE S.A.</strong>,{' '}
@@ -85,7 +85,7 @@ export function Ecosystem() {
                 {d.nombre}
               </div>
               <div className="mt-3 h-1.5 w-full rounded-full" style={{ background: d.color }} />
-              <p className="mt-4 text-justify text-[13.5px] leading-relaxed text-gris-medio">
+              <p className="mt-4 text-[13.5px] leading-relaxed text-gris-medio">
                 {d.descripcion}
               </p>
             </motion.div>

@@ -25,7 +25,7 @@ export function MensajeFinal() {
           <div className="flex items-center gap-3">
             <span className="h-px w-10 bg-iasa-amarillo" />
             <span className="text-[11px] uppercase tracking-eyebrow text-iasa-amarillo">
-              Bienvenido a Grupo IASA
+              Conversemos su proyecto
             </span>
           </div>
 
@@ -41,20 +41,30 @@ export function MensajeFinal() {
             camino.
           </p>
 
-          <div className="mt-12 flex flex-wrap items-center gap-3">
+          <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Link
               href="/contacto"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[14px] font-medium text-carbon transition-transform hover:-translate-y-px"
+              className="inline-flex items-center gap-2 rounded-full bg-iasa-amarillo px-6 py-3 text-[14px] font-medium text-iasa-petroleo transition-transform hover:-translate-y-px"
             >
               Quiero conversar mi proyecto
               <span aria-hidden>→</span>
             </Link>
             <Link
               href="/nosotros"
-              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-[14px] font-medium text-white transition-colors hover:border-white/55"
+              className="text-[14px] font-medium text-white/75 underline decoration-white/30 underline-offset-4 transition-colors hover:text-white hover:decoration-white"
             >
               Conocer al equipo Grupo IASA
             </Link>
+          </div>
+
+          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-white/15 pt-8 text-[14px]">
+            <a
+              href="mailto:contacto@grupoiasa.cl"
+              className="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white"
+            >
+              contacto@grupoiasa.cl
+            </a>
+            <span className="text-white/55">Respondemos en 48 horas hábiles</span>
           </div>
         </motion.div>
       </div>

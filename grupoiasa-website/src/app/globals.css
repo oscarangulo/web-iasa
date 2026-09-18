@@ -34,7 +34,9 @@
   .h-card { @apply text-[17px] font-semibold leading-snug; }
   .body-lg { @apply text-[16px] md:text-[17px] leading-relaxed text-gris-medio text-pretty; }
   .body { @apply text-[15px] leading-relaxed text-gris-medio text-pretty; }
-  /* Párrafos de cuerpo largo justificados (carácter de documento técnico). */
-  .prose-justify p { @apply text-justify; }
+  /* Párrafos de cuerpo largo justificados (carácter de documento técnico).
+     Sin partición de palabras el justificado abre ríos, que es justo lo
+     contrario de un documento bien compuesto: va siempre con hyphens. */
+  .prose-justify p { @apply text-justify hyphens-auto; }
   .hairline { @apply border-t border-gris-borde; }
 }

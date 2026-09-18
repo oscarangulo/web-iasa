@@ -29,7 +29,7 @@ export default function NosotrosPage() {
       <Hero
         eyebrow="Nosotros"
         titulo={<>Ingeniería y consultoría ambiental <em className="not-italic text-iasa-azul">desde la cuna a la tumba.</em></>}
-        bajada="30 años integrando ingeniería civil, consultoría ambiental y ciencias del mar. Tres empresas operativas, un equipo senior compartido y una misma cultura de trabajo en Providencia, Santiago."
+        bajada="30 años integrando ingeniería civil, consultoría ambiental y ciencias del mar. Cuatro empresas operativas, un equipo senior compartido y una misma cultura de trabajo en Providencia, Santiago."
       />
 
       <section className="container-x py-20 md:py-28 grid gap-12 lg:grid-cols-12">
@@ -56,7 +56,7 @@ export default function NosotrosPage() {
         <div className="container-x py-20 md:py-24">
           <SectionTitle
             eyebrow="Cómo nos organizamos"
-            titulo="Tres empresas, un equipo, un mismo método."
+            titulo="Cuatro empresas, un equipo, un mismo método."
             bajada="Cada empresa concentra su especialidad técnica. Cuatro plataformas transversales sostienen a las tres y permiten que un proyecto que requiere ingeniería civil, criterio ambiental y oceanografía se resuelva con una sola conversación."
           />
 
